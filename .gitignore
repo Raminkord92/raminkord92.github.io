@@ -1,0 +1,20 @@
+# Ignore Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore temporary files
+*.log
+*.tmp
+*.swp
+
+# Ignore IDE/editor specific files
+*.DS_Store
+*.idea/
+*.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Gemfile.lock if you want to allow different versions of gems
+Gemfile.lock
