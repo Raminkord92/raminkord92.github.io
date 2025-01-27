@@ -2,5 +2,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-url: "https://Raminkord92.github.io/PDFxTMD"  # Your GitHub Pages URL
+url: "https://github.com/Raminkord92/Raminkord92.github.io"  # Your GitHub Pages URL
 baseurl: ""  # Leave empty for user/organization pages
