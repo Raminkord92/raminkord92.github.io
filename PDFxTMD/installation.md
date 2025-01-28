@@ -142,21 +142,17 @@ sudo make install  # Linux
                 </div>
             </div>
 
-            <div id="gitalk-container"></div>
-            <script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-            <script>
-                const gitalk = new Gitalk({
-                    clientID: 'Ov23live9Yo9UFdDbOSm',
-                    clientSecret: 'bd782a026b8bdd2896f0f06ae71f7960f6643ee4',
-                    repo: 'YOUR_GITHUB_REPO',      // The repository to store comments
-                    owner: 'Raminkord92',
-                    admin: ['Raminkord92'], // Admins who can manage issues
-                    id: location.pathname,            // Ensure uniqueness
-                    distractionFreeMode: false       // Optional: distraction free mode
-                });
-                gitalk.render('gitalk-container');
+            <!-- Giscus Comments -->
+            <script src="https://giscus.app/client.js"
+            data-repo="Raminkord92/raminkord92.github.io"
+            data-repo-id="R_kgDONwvdSw"
+            data-category="Comments"
+            data-category-id="DIC_kwDONwvdS84CmaRl"
+            data-mapping="pathname"
+            data-theme="light"
+            crossorigin="anonymous"
+            async>
             </script>
-            <!-- End of Gitalk Comments Section -->
         </div>
     </div>
 </div>
