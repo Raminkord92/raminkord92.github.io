@@ -11,12 +11,10 @@ vendor/
 *.tmp
 *.swp
 
-# Ignore IDE/editor specific files
 *.DS_Store
 *.idea/
 *.vscode/
 *.sublime-project
 *.sublime-workspace
 
-# Ignore Gemfile.lock if you want to allow different versions of gems
 Gemfile.lock
