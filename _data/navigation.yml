@@ -1,10 +1,14 @@
 - name: Home
   link: /
-#- name: Tutorial
- # link: /tutorial
-#- name: About
-#  link: /about.html
-#- name: News
- # link: /blog.html
-- name: Doxygen Documentation
-  link: doxygen\index.html
+- name: PDFxTMD
+  link: /PDFxTMD/
+  dropdown:
+    - name: Documentation
+      url: /PDFxTMD/documentation.html
+    - name: Installation
+      url: /PDFxTMD/installation.html
+    - name: Tutorials
+      url: /PDFxTMD/tutorial.html
+
+- name: Blogs
+  link: /blogs.html

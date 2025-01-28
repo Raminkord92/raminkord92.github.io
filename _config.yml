@@ -2,5 +2,12 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-url: "https://github.com/Raminkord92/Raminkord92.github.io"  # Your GitHub Pages URL
-baseurl: ""  # Leave empty for user/organization pages
+title: "RK92"  # Add your website title
+description: "Personal website of Ramin Kord Valeshabadi"  
+url: "https://github.com/Raminkord92/Raminkord92.github.io"  
+baseurl: "" 
+paginate: 5  
+social_links: 
+  github: "https://github.com/Raminkord92"
+  linkedin: "https://www.linkedin.com/in/ramin-kord-valeshabadi-7321322a3/"
+markdown: kramdown  # Set a markdown processor
