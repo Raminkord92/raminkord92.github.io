@@ -1,6 +1,7 @@
 ---
 layout: pdfxtmd_default
 title: Installation Guide
+description: "Step-by-step guide to install the PDFxTMD library, including commands and verification steps."
 ---
 
 <div class="container mt-4">

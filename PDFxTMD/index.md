@@ -1,6 +1,7 @@
 ---
 layout: pdfxtmd_default
 title: PDFxTMD Library
+description: "The PDFxTMD library offers a modern solution that serves as an alternative to both LHAPDF and TMDLib."
 ---
 
 <!-- Wrap content in a Bootstrap container -->
