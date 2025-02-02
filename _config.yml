@@ -11,3 +11,8 @@ social_links:
   github: "https://github.com/Raminkord92"
   linkedin: "https://www.linkedin.com/in/ramin-kord-valeshabadi-7321322a3/"
 markdown: kramdown  # Set a markdown processor
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight

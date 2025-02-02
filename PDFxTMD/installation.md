@@ -116,7 +116,7 @@ $env:CMAKE_TOOLCHAIN_FILE = "C:\vcpkg\scripts\buildsystems\vcpkg.cmake"
                     <div class="mb-4">
                         <h4 class="text-success"><i class="fas fa-terminal"></i> Build Commands</h4>
                         <pre><code class="language-bash">
-git clone https://github.com/yourusername/pdfxtmd.git
+git clone https://github.com/Raminkord92/PDFxTMD.git
 cd pdfxtmd
 mkdir build
 cd build
