@@ -1,0 +1,5 @@
+<map id="conv_limits_base&lt; 4u &gt;" name="conv_limits_base&lt; 4u &gt;">
+<area shape="rect" id="node1" title="The specialization of conv_limits_base for 4 byte integers, e.g., int32_t, uint32_t." alt="" coords="107,5,289,32"/>
+<area shape="rect" id="node2" href="$structconv__limits_3_014u_00_01false_01_4.html" title="The specialization of conv_limits for 4 byte unsigned integers, e.g., uint32_t." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node3" href="$structconv__limits_3_014u_00_01true_01_4.html" title="The specialization of conv_limits for 4 byte signed integers, e.g., int32_t." alt="" coords="212,80,389,107"/>
+</map>

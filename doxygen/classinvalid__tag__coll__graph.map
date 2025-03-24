@@ -1,0 +1,5 @@
+<map id="invalid_tag" name="invalid_tag">
+<area shape="rect" id="node1" title="An exception class indicating an invalid tag." alt="" coords="15,155,110,181"/>
+<area shape="rect" id="node2" href="$classexception.html" title="A base exception class used in fkYAML library." alt="" coords="19,80,106,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,120,32"/>
+</map>

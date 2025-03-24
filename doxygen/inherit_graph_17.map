@@ -1,12 +1,20 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,183,120,209"/>
-<area shape="rect" id="node2" href="$classPDFxTMD_1_1PDFxTMDException.html" title=" " alt="" coords="168,183,391,209"/>
-<area shape="rect" id="node3" href="$classPDFxTMD_1_1FileLoadException.html" title=" " alt="" coords="457,5,669,32"/>
-<area shape="rect" id="node4" href="$classPDFxTMD_1_1InitializationError.html" title=" " alt="" coords="459,56,666,83"/>
-<area shape="rect" id="node5" href="$classPDFxTMD_1_1InvalidFormatException.html" title=" " alt="" coords="439,107,687,133"/>
-<area shape="rect" id="node6" href="$classPDFxTMD_1_1InvalidInfoFile.html" title=" " alt="" coords="469,157,656,184"/>
-<area shape="rect" id="node7" href="$classPDFxTMD_1_1InvalidInputError.html" title=" " alt="" coords="461,208,664,235"/>
-<area shape="rect" id="node8" href="$classPDFxTMD_1_1NotSupportError.html" title=" " alt="" coords="463,259,662,285"/>
-<area shape="rect" id="node9" href="$classPDFxTMD_1_1OutOfRangeExcecption.html" title=" " alt="" coords="441,309,685,336"/>
-<area shape="rect" id="node10" href="$classPDFxTMD_1_1PolicyExeption.html" title=" " alt="" coords="468,360,657,387"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,474,124,501"/>
+<area shape="rect" id="node2" href="$structdetect_1_1has__begin__end.html" title="Type traits to check if begin/end functions can be called on a T object." alt="" coords="221,5,389,47"/>
+<area shape="rect" id="node3" href="$structdetector__impl_1_1detector.html" title="A helper for general type detection." alt="" coords="218,71,393,127"/>
+<area shape="rect" id="node4" href="$structdisjunction.html" title="A simple implementation to use std::disjunction with C++11/C++14." alt="" coords="226,151,385,178"/>
+<area shape="rect" id="node5" href="$structhas__from__node.html" title="Type traits to check if T is a compatible type for BasicNodeType in terms of from_node function." alt="" coords="202,203,409,244"/>
+<area shape="rect" id="node6" href="$structhas__get__buffer__view.html" title="Type traits to check if InputAdapterType has get_buffer_view member function." alt="" coords="227,269,383,325"/>
+<area shape="rect" id="node7" href="$structhas__to__node.html" title="Type traits to check if T is a compatible type for BasicNodeType in terms of to_node function." alt="" coords="194,349,417,391"/>
+<area shape="rect" id="node8" href="$structis__basic__node.html" title="A struct to check the template parameter class is a kind of basic_node template class." alt="" coords="230,415,381,442"/>
+<area shape="rect" id="node9" href="$structis__comparable.html" title="Type trait to check if T and U are comparable types." alt="" coords="199,467,412,508"/>
+<area shape="rect" id="node10" href="$structis__compatible__integer__type__impl.html" title="Type trait implementation to check if TargetIntegerType and CompatibleIntegerType are compatible inte..." alt="" coords="172,533,439,589"/>
+<area shape="rect" id="node12" href="$structis__complete__type.html" title="Type traits to check if T is a complete type." alt="" coords="223,613,387,655"/>
+<area shape="rect" id="node13" href="$structis__contiguous__container.html" title="Type traits to check if T is a container which has contiguous bytes." alt="" coords="197,679,414,706"/>
+<area shape="rect" id="node14" href="$structis__input__adapter.html" title="Type traits to check if T is an input adapter type." alt="" coords="227,731,384,772"/>
+<area shape="rect" id="node15" href="$structis__node__compatible__type__impl.html" title="Type traits implementation of is_node_compatible_type to check if CompatibleType is a compatible type..." alt="" coords="195,797,415,853"/>
+<area shape="rect" id="node17" href="$structis__node__ref__storage.html" title="A struct to check the template parameter class is a kind of node_ref_storage_template class." alt="" coords="210,877,401,903"/>
+<area shape="rect" id="node18" href="$structis__non__bool__integral.html" title="Type trait to check if IntegralType is of non&#45;boolean integral types." alt="" coords="202,928,409,969"/>
+<area shape="rect" id="node11" href="$structis__compatible__integer__type.html" title="Type traits to check if TargetIntegerType and CompatibleIntegerType are compatible integer types." alt="" coords="487,533,680,589"/>
+<area shape="rect" id="node16" href="$structis__node__compatible__type.html" title="Type traits to check if CompatibleType is a compatible type for BasicNodeType." alt="" coords="495,797,671,853"/>
 </map>
