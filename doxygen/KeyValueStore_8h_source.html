@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/KeyValueStore.h Source File</title>
+<title>PDFxTMDLib: KeyValueStore.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,36 +70,36 @@ $(function() {
 <div class="title">KeyValueStore.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="KeyValueStore_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;optional&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">enum class</span> Types</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0">    9</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0">Types</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Int,</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    Float,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    String</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a1686a6c336b71b36d77354cea19a8b52">Int</a>,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a22ae0e2b89e5e3d477f988cc36d3272b">Float</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a27118326006d3829667a400ad23d5d98">String</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using</span> StandardType = std::variant&lt;int, float, std::string&gt;;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> StandardTypeMap = std::map&lt;std::string, StandardType&gt;;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#ae5f215c8e56e58adde702e4ece2a0ed1">   15</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacePDFxTMD.html#ae5f215c8e56e58adde702e4ece2a0ed1">StandardType</a> = std::variant&lt;int, float, std::string&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a4667d981ac5f09dadd5ae789c18b0ae9">   16</a></span>&#160;<span class="keyword">using</span> <a class="code" href="namespacePDFxTMD.html#a4667d981ac5f09dadd5ae789c18b0ae9">StandardTypeMap</a> = std::map&lt;std::string, StandardType&gt;;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1KeyValueStore.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1KeyValueStore.html">KeyValueStore</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> set(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> StandardType &amp;value)</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1KeyValueStore.html#addc36bfe4650ff8e0aa59a6efc0329a3">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1KeyValueStore.html#addc36bfe4650ff8e0aa59a6efc0329a3">set</a>(<span class="keyword">const</span> std::string &amp;key, <span class="keyword">const</span> <a class="code" href="namespacePDFxTMD.html#ae5f215c8e56e58adde702e4ece2a0ed1">StandardType</a> &amp;<a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>)</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        m_data[key] = value;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        m_data[key] = <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::optional&lt;StandardType&gt; get(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1KeyValueStore.html#a5a05c7c75069fa57c29cf42c3ffa2d5c">   24</a></span>&#160;    std::optional&lt;StandardType&gt; <a class="code" href="classPDFxTMD_1_1KeyValueStore.html#a5a05c7c75069fa57c29cf42c3ffa2d5c">get</a>(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> (!contains(key))</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classPDFxTMD_1_1KeyValueStore.html#a979d4c0b013f8e5b23ab7d215f61d17f">contains</a>(key))</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> m_data.at(key);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">bool</span> contains(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1KeyValueStore.html#a979d4c0b013f8e5b23ab7d215f61d17f">   30</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1KeyValueStore.html#a979d4c0b013f8e5b23ab7d215f61d17f">contains</a>(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">auto</span> foundKeyItr = m_data.find(key);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (foundKeyItr == m_data.end())</div>
@@ -108,10 +108,21 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    StandardTypeMap m_data;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a4667d981ac5f09dadd5ae789c18b0ae9">StandardTypeMap</a> m_data;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
 <div class="ttc" id="aclassPDFxTMD_1_1KeyValueStore_html"><div class="ttname"><a href="classPDFxTMD_1_1KeyValueStore.html">PDFxTMD::KeyValueStore</a></div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:18</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1KeyValueStore_html_a5a05c7c75069fa57c29cf42c3ffa2d5c"><div class="ttname"><a href="classPDFxTMD_1_1KeyValueStore.html#a5a05c7c75069fa57c29cf42c3ffa2d5c">PDFxTMD::KeyValueStore::get</a></div><div class="ttdeci">std::optional&lt; StandardType &gt; get(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:24</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1KeyValueStore_html_a979d4c0b013f8e5b23ab7d215f61d17f"><div class="ttname"><a href="classPDFxTMD_1_1KeyValueStore.html#a979d4c0b013f8e5b23ab7d215f61d17f">PDFxTMD::KeyValueStore::contains</a></div><div class="ttdeci">bool contains(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:30</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1KeyValueStore_html_addc36bfe4650ff8e0aa59a6efc0329a3"><div class="ttname"><a href="classPDFxTMD_1_1KeyValueStore.html#addc36bfe4650ff8e0aa59a6efc0329a3">PDFxTMD::KeyValueStore::set</a></div><div class="ttdeci">void set(const std::string &amp;key, const StandardType &amp;value)</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:20</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a4667d981ac5f09dadd5ae789c18b0ae9"><div class="ttname"><a href="namespacePDFxTMD.html#a4667d981ac5f09dadd5ae789c18b0ae9">PDFxTMD::StandardTypeMap</a></div><div class="ttdeci">std::map&lt; std::string, StandardType &gt; StandardTypeMap</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:16</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_ae5f215c8e56e58adde702e4ece2a0ed1"><div class="ttname"><a href="namespacePDFxTMD.html#ae5f215c8e56e58adde702e4ece2a0ed1">PDFxTMD::StandardType</a></div><div class="ttdeci">std::variant&lt; int, float, std::string &gt; StandardType</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:15</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_afa452455acaaa58c2e4a3817fdeb98c0"><div class="ttname"><a href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0">PDFxTMD::Types</a></div><div class="ttdeci">Types</div><div class="ttdef"><b>Definition:</b> KeyValueStore.h:10</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_afa452455acaaa58c2e4a3817fdeb98c0a1686a6c336b71b36d77354cea19a8b52"><div class="ttname"><a href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a1686a6c336b71b36d77354cea19a8b52">PDFxTMD::Types::Int</a></div><div class="ttdeci">@ Int</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_afa452455acaaa58c2e4a3817fdeb98c0a22ae0e2b89e5e3d477f988cc36d3272b"><div class="ttname"><a href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a22ae0e2b89e5e3d477f988cc36d3272b">PDFxTMD::Types::Float</a></div><div class="ttdeci">@ Float</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_afa452455acaaa58c2e4a3817fdeb98c0a27118326006d3829667a400ad23d5d98"><div class="ttname"><a href="namespacePDFxTMD.html#afa452455acaaa58c2e4a3817fdeb98c0a27118326006d3829667a400ad23d5d98">PDFxTMD::Types::String</a></div><div class="ttdeci">@ String</div></div>
+<div class="ttc" id="anamespacenode__attr__mask_html_a28e7d5eedccb11d99bb66e3f30d159d1"><div class="ttname"><a href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">node_attr_mask::value</a></div><div class="ttdeci">constexpr node_attr_t value</div><div class="ttdoc">The bit mask for node value type bits.</div><div class="ttdef"><b>Definition:</b> node.hpp:7674</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

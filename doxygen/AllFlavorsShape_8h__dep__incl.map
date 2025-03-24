@@ -1,0 +1,12 @@
+<map id="AllFlavorsShape.h" name="AllFlavorsShape.h">
+<area shape="rect" id="node1" title=" " alt="" coords="680,5,819,32"/>
+<area shape="rect" id="node2" href="$TTrilinearInterpolator_8h.html" title=" " alt="" coords="738,155,908,181"/>
+<area shape="rect" id="node6" href="$CDefaultLHAPDFFileReader_8h.html" title=" " alt="" coords="256,80,467,107"/>
+<area shape="rect" id="node10" href="$TDefaultAllFlavorReader_8h.html" title=" " alt="" coords="788,80,981,107"/>
+<area shape="rect" id="node3" href="$GenericPDF_8h.html" title=" " alt="" coords="308,229,416,256"/>
+<area shape="rect" id="node4" href="$Factory_8h.html" title=" " alt="" coords="322,304,401,331"/>
+<area shape="rect" id="node5" href="$FortranFactoryWrapper_8h.html" title=" " alt="" coords="271,379,452,405"/>
+<area shape="rect" id="node7" href="$CContinuationExtrapolator_8h.html" title=" " alt="" coords="23,155,228,181"/>
+<area shape="rect" id="node8" href="$CLHAPDFBicubicInterpolator_8h.html" title=" " alt="" coords="253,155,470,181"/>
+<area shape="rect" id="node9" href="$CLHAPDFBilinearInterpolator_8h.html" title=" " alt="" coords="494,155,714,181"/>
+</map>

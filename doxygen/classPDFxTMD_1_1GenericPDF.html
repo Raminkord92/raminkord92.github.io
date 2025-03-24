@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>PDFxTMD</b></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacePDFxTMD.html">PDFxTMD</a></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,34 +73,157 @@ $(function() {
 <div class="title">PDFxTMD::GenericPDF&lt; Tag, Reader, Interpolator, Extrapolator &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="GenericPDF_8h_source.html">GenericPDF.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a683e44d412b5840ef2b17927a21a0983"><td class="memItemLeft" align="right" valign="top"><a id="a683e44d412b5840ef2b17927a21a0983"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenericPDF</b> (const std::string &amp;pdfName, int setNumber)</td></tr>
+<tr class="memitem:a683e44d412b5840ef2b17927a21a0983"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a683e44d412b5840ef2b17927a21a0983">GenericPDF</a> (const std::string &amp;pdfName, int setNumber)</td></tr>
 <tr class="separator:a683e44d412b5840ef2b17927a21a0983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0630bae405f199ea6c4654c6f44af09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#ae0630bae405f199ea6c4654c6f44af09">pdf</a> (PartonFlavor flavor, double x, double mu2) const</td></tr>
+<tr class="memitem:a006344f2329ebe711a32ec85d025253d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a006344f2329ebe711a32ec85d025253d">~GenericPDF</a> ()</td></tr>
+<tr class="separator:a006344f2329ebe711a32ec85d025253d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0630bae405f199ea6c4654c6f44af09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#ae0630bae405f199ea6c4654c6f44af09">pdf</a> (<a class="el" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, double x, double mu2) const</td></tr>
 <tr class="memdesc:ae0630bae405f199ea6c4654c6f44af09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the collinear PDF value for a specific parton flavor.  <a href="classPDFxTMD_1_1GenericPDF.html#ae0630bae405f199ea6c4654c6f44af09">More...</a><br /></td></tr>
 <tr class="separator:ae0630bae405f199ea6c4654c6f44af09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421234ca929babfda224f7d6c2b65d7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a421234ca929babfda224f7d6c2b65d7e">pdf</a> (double x, double mu2, std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;output) const</td></tr>
+<tr class="memitem:a421234ca929babfda224f7d6c2b65d7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a421234ca929babfda224f7d6c2b65d7e">pdf</a> (double x, double mu2, std::array&lt; double, <a class="el" href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a> &gt; &amp;output) const</td></tr>
 <tr class="memdesc:a421234ca929babfda224f7d6c2b65d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the array of Collinear PDF values for {tbar, bbar, cbar, sbar, ubar, dbar, g, d, u, s, c, b, t}.  <a href="classPDFxTMD_1_1GenericPDF.html#a421234ca929babfda224f7d6c2b65d7e">More...</a><br /></td></tr>
 <tr class="separator:a421234ca929babfda224f7d6c2b65d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2e56760c0e7083b1297dd11095f4cff"><td class="memItemLeft" align="right" valign="top"><a id="aa2e56760c0e7083b1297dd11095f4cff"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenericPDF</b> (<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memitem:aa2e56760c0e7083b1297dd11095f4cff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#aa2e56760c0e7083b1297dd11095f4cff">GenericPDF</a> (<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:aa2e56760c0e7083b1297dd11095f4cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6131469b13e2786dcb15b27d7b1f9cfe"><td class="memItemLeft" align="right" valign="top"><a id="a6131469b13e2786dcb15b27d7b1f9cfe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenericPDF</b> (const <a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> &amp;other)</td></tr>
+<tr class="memitem:a6131469b13e2786dcb15b27d7b1f9cfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a6131469b13e2786dcb15b27d7b1f9cfe">GenericPDF</a> (const <a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> &amp;other)</td></tr>
 <tr class="separator:a6131469b13e2786dcb15b27d7b1f9cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18641d20d39ebf77c4c3b8a713f5e56c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a18641d20d39ebf77c4c3b8a713f5e56c">tmd</a> (PartonFlavor flavor, double x, double kt2, double mu2)</td></tr>
+<tr class="memitem:a18641d20d39ebf77c4c3b8a713f5e56c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a18641d20d39ebf77c4c3b8a713f5e56c">tmd</a> (<a class="el" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, double x, double kt2, double mu2)</td></tr>
 <tr class="memdesc:a18641d20d39ebf77c4c3b8a713f5e56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the TMD PDF value for a specific parton flavor.  <a href="classPDFxTMD_1_1GenericPDF.html#a18641d20d39ebf77c4c3b8a713f5e56c">More...</a><br /></td></tr>
 <tr class="separator:a18641d20d39ebf77c4c3b8a713f5e56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5335f2ef6dd86bdfda84548d8b16b760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a5335f2ef6dd86bdfda84548d8b16b760">tmd</a> (double x, double kt2, double mu2, std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;output)</td></tr>
+<tr class="memitem:a5335f2ef6dd86bdfda84548d8b16b760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#a5335f2ef6dd86bdfda84548d8b16b760">tmd</a> (double x, double kt2, double mu2, std::array&lt; double, <a class="el" href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a> &gt; &amp;output)</td></tr>
 <tr class="memdesc:a5335f2ef6dd86bdfda84548d8b16b760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the vector of TMD PDF values for {tbar, bbar, cbar, sbar, ubar, dbar, g, d, u, s, c, b, t}.  <a href="classPDFxTMD_1_1GenericPDF.html#a5335f2ef6dd86bdfda84548d8b16b760">More...</a><br /></td></tr>
 <tr class="separator:a5335f2ef6dd86bdfda84548d8b16b760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0ceb8378958660b7ccde50913ed6df8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structPDFxTMD_1_1YamlStandardTMDInfo.html">YamlStandardTMDInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericPDF.html#ab0ceb8378958660b7ccde50913ed6df8">getStdPDFInfo</a> () const</td></tr>
 <tr class="memdesc:ab0ceb8378958660b7ccde50913ed6df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the standard PDF info.  <a href="classPDFxTMD_1_1GenericPDF.html#ab0ceb8378958660b7ccde50913ed6df8">More...</a><br /></td></tr>
 <tr class="separator:ab0ceb8378958660b7ccde50913ed6df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a683e44d412b5840ef2b17927a21a0983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683e44d412b5840ef2b17927a21a0983">&#9670;&nbsp;</a></span>GenericPDF() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations&lt;Tag&gt;::Reader, typename Interpolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Interpolator, typename Extrapolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Extrapolator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pdfName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>setNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a006344f2329ebe711a32ec85d025253d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006344f2329ebe711a32ec85d025253d">&#9670;&nbsp;</a></span>~GenericPDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations&lt;Tag&gt;::Reader, typename Interpolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Interpolator, typename Extrapolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Extrapolator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::~<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2e56760c0e7083b1297dd11095f4cff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e56760c0e7083b1297dd11095f4cff">&#9670;&nbsp;</a></span>GenericPDF() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations&lt;Tag&gt;::Reader, typename Interpolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Interpolator, typename Extrapolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Extrapolator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6131469b13e2786dcb15b27d7b1f9cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6131469b13e2786dcb15b27d7b1f9cfe">&#9670;&nbsp;</a></span>GenericPDF() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations&lt;Tag&gt;::Reader, typename Interpolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Interpolator, typename Extrapolator  = typename DefaultPDFImplementations&lt;Tag&gt;::Extrapolator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::<a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab0ceb8378958660b7ccde50913ed6df8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0ceb8378958660b7ccde50913ed6df8">&#9670;&nbsp;</a></span>getStdPDFInfo()</h2>
@@ -158,7 +281,7 @@ template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;&#160;</td>
+          <td class="paramtype">std::array&lt; double, <a class="el" href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -207,7 +330,7 @@ template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations
         <tr>
           <td class="memname">double <a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::pdf </td>
           <td>(</td>
-          <td class="paramtype">PartonFlavor&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a>&#160;</td>
           <td class="paramname"><em>flavor</em>, </td>
         </tr>
         <tr>
@@ -279,7 +402,7 @@ template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;&#160;</td>
+          <td class="paramtype">std::array&lt; double, <a class="el" href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>output</em>&#160;</td>
         </tr>
         <tr>
@@ -328,7 +451,7 @@ template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations
         <tr>
           <td class="memname">double <a class="el" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a>&lt; Tag, Reader, Interpolator, Extrapolator &gt;::tmd </td>
           <td>(</td>
-          <td class="paramtype">PartonFlavor&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a>&#160;</td>
           <td class="paramname"><em>flavor</em>, </td>
         </tr>
         <tr>
@@ -375,7 +498,7 @@ template&lt;typename Tag , typename Reader  = typename DefaultPDFImplementations
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/<a class="el" href="GenericPDF_8h_source.html">GenericPDF.h</a></li>
+<li><a class="el" href="GenericPDF_8h_source.html">GenericPDF.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

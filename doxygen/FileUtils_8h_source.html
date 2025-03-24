@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/FileUtils.h Source File</title>
+<title>PDFxTMDLib: FileUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,25 +70,31 @@ $(function() {
 <div class="title">FileUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="FileUtils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;system_error&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1FileUtils.html">FileUtils</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> HasUserAccess(<span class="keyword">const</span> std::string &amp;path);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> FreeSize(<span class="keyword">const</span> std::string &amp;path);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> Exists(<span class="keyword">const</span> std::string &amp;path);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> std::string ParentDir(<span class="keyword">const</span> std::string &amp;path);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> CreateDirs(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html#a582f0f97a571415a7f71fb3da720eb0d">   12</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1FileUtils.html#a582f0f97a571415a7f71fb3da720eb0d">HasUserAccess</a>(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html#a44c5393d6e93c55e9f86ba5a62de57a0">   13</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1FileUtils.html#a44c5393d6e93c55e9f86ba5a62de57a0">FreeSize</a>(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html#a91afea3dfc7375a8ac41c0b2206c0a67">   14</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1FileUtils.html#a91afea3dfc7375a8ac41c0b2206c0a67">Exists</a>(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html#aae4f5d173eea80cd2d3c21379233862c">   15</a></span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="classPDFxTMD_1_1FileUtils.html#aae4f5d173eea80cd2d3c21379233862c">ParentDir</a>(<span class="keyword">const</span> std::string &amp;path);</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1FileUtils.html#ad0a2cf7e862f10fc32ca986328b74470">   16</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1FileUtils.html#ad0a2cf7e862f10fc32ca986328b74470">CreateDirs</a>(<span class="keyword">const</span> std::string &amp;path);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
 <div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html">PDFxTMD::FileUtils</a></div><div class="ttdef"><b>Definition:</b> FileUtils.h:10</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html_a44c5393d6e93c55e9f86ba5a62de57a0"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html#a44c5393d6e93c55e9f86ba5a62de57a0">PDFxTMD::FileUtils::FreeSize</a></div><div class="ttdeci">static double FreeSize(const std::string &amp;path)</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html_a582f0f97a571415a7f71fb3da720eb0d"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html#a582f0f97a571415a7f71fb3da720eb0d">PDFxTMD::FileUtils::HasUserAccess</a></div><div class="ttdeci">static bool HasUserAccess(const std::string &amp;path)</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html_a91afea3dfc7375a8ac41c0b2206c0a67"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html#a91afea3dfc7375a8ac41c0b2206c0a67">PDFxTMD::FileUtils::Exists</a></div><div class="ttdeci">static bool Exists(const std::string &amp;path)</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html_aae4f5d173eea80cd2d3c21379233862c"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html#aae4f5d173eea80cd2d3c21379233862c">PDFxTMD::FileUtils::ParentDir</a></div><div class="ttdeci">static std::string ParentDir(const std::string &amp;path)</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1FileUtils_html_ad0a2cf7e862f10fc32ca986328b74470"><div class="ttname"><a href="classPDFxTMD_1_1FileUtils.html#ad0a2cf7e862f10fc32ca986328b74470">PDFxTMD::FileUtils::CreateDirs</a></div><div class="ttdeci">static bool CreateDirs(const std::string &amp;path)</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

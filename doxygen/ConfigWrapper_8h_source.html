@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/ConfigWrapper.h Source File</title>
+<title>PDFxTMDLib: ConfigWrapper.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,7 +70,7 @@ $(function() {
 <div class="title">ConfigWrapper.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="ConfigWrapper_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -79,25 +79,25 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/PartonUtils.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/external/fkYAML/node.hpp&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PartonUtils_8h.html">PDFxTMDLib/Common/PartonUtils.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="node_8hpp.html">PDFxTMDLib/external/fkYAML/node.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1ConfigWrapper.html">ConfigWrapper</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">enum class</span> Format</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">   18</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        YAML</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">YAML</a></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Modified constructor to initialize data</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html">ConfigWrapper</a>() : data{Format::YAML, fkyaml::node::mapping()} {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#a240af9ce1e3be3decfd06b31b884f80c">   24</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#a240af9ce1e3be3decfd06b31b884f80c">ConfigWrapper</a>() : data{<a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a>::YAML, fkyaml::<a class="code" href="classbasic__node.html">node</a>::mapping()} {}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> loadFromFile(<span class="keyword">const</span> std::filesystem::path &amp;filepath, Format format)</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#ae10009a6ccc1d4e55532bac228d75e40">   26</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#ae10009a6ccc1d4e55532bac228d75e40">loadFromFile</a>(<span class="keyword">const</span> std::filesystem::path &amp;filepath, <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (format == Format::YAML)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a> == <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">Format::YAML</a>)</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            std::ifstream ifs(filepath);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">if</span> (!ifs.is_open())</div>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <span class="keywordflow">if</span> (!data.yaml.is_mapping())</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    data.yaml = fkyaml::node::mapping();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    data.format = format;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (data.yaml.size() == 0)</div>
@@ -118,22 +118,22 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    ofs &lt;&lt; <span class="stringliteral">&quot;{}&quot;</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                data.format = format;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                data.yaml = fkyaml::node::mapping();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                data.format = format;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> loadFromString(<span class="keyword">const</span> std::string &amp;data_string, Format format)</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#aa3e8462340d5be9c89c53d2002c92e1c">   62</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aa3e8462340d5be9c89c53d2002c92e1c">loadFromString</a>(<span class="keyword">const</span> std::string &amp;data_string, <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (format == Format::YAML)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a> == <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">Format::YAML</a>)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
@@ -143,54 +143,54 @@ $(function() {
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">if</span> (!data.yaml.is_mapping())</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    data.yaml = fkyaml::node::mapping(); <span class="comment">// Reset to empty mapping</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    data.format = format;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// Indicate failure</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                data.format = format;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>; <span class="comment">// Success: it’s a mapping</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                data.yaml = fkyaml::node::mapping();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                data.format = format;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                data.format = <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">false</span>; <span class="comment">// Exception means failure</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::pair&lt;std::optional&lt;T&gt;, ErrorType&gt; get(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#a9ade5350beb59626f80f0d1a204ab1ae">   90</a></span>&#160;    std::pair&lt;std::optional&lt;T&gt;, <a class="code" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19a">ErrorType</a>&gt; <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#a9ade5350beb59626f80f0d1a204ab1ae">get</a>(<span class="keyword">const</span> std::string &amp;key)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (data.format == Format::YAML)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (data.format == <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">Format::YAML</a>)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">if</span> (data.yaml.contains(key))</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    T value = data.yaml[key].get_value&lt;T&gt;();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">return</span> {value, ErrorType::None};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    T <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a> = data.yaml[key].get_value&lt;T&gt;();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    <span class="keywordflow">return</span> {<a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>, <a class="code" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aa6adf97f83acf6453d4a6a4b1070f3754">ErrorType::None</a>};</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> {std::nullopt, ErrorType::CONFIG_KeyNotFound};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <span class="keywordflow">return</span> {std::nullopt, <a class="code" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aa5495d74c7a927f640d7f9117ebcc8134">ErrorType::CONFIG_KeyNotFound</a>};</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">return</span> {std::nullopt, ErrorType::CONFIG_ConversionFailed};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">return</span> {std::nullopt, <a class="code" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aac6fc18442f25d8b9af3f39cff691f940">ErrorType::CONFIG_ConversionFailed</a>};</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> {std::nullopt, ErrorType::CONFIG_KeyNotFound};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> {std::nullopt, <a class="code" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aa5495d74c7a927f640d7f9117ebcc8134">ErrorType::CONFIG_KeyNotFound</a>};</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// New method to set a value for a key</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> set(<span class="keyword">const</span> std::string&amp; key, <span class="keyword">const</span> T&amp; value)</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#ad19dafcd723f05e432c28faf25d41bb1">  113</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#ad19dafcd723f05e432c28faf25d41bb1">set</a>(<span class="keyword">const</span> std::string&amp; key, <span class="keyword">const</span> T&amp; <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>)</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (data.format == Format::YAML)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (data.format == <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">Format::YAML</a>)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">try</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <span class="keywordflow">if</span> (data.yaml == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                data.yaml[key] = value;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                data.yaml[key] = <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp; e)</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            {</div>
@@ -202,7 +202,7 @@ $(function() {
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// New method to save the configuration to a YAML file</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">bool</span> saveToFile(<span class="keyword">const</span> std::string&amp; filename)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#a3eaf1b4f91176712b6ffaa9416b2c688">  133</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#a3eaf1b4f91176712b6ffaa9416b2c688">saveToFile</a>(<span class="keyword">const</span> std::string&amp; filename)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::ofstream ofs(filename);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (!ofs.is_open())</div>
@@ -222,21 +222,41 @@ $(function() {
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> initializeEmptyYAML()</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ConfigWrapper.html#a367078cd125ed836d4716e2fda6d91d8">  153</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#a367078cd125ed836d4716e2fda6d91d8">initializeEmptyYAML</a>()</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        data.yaml = fkyaml::node::mapping();</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        data.format = Format::YAML;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        data.format = <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">Format::YAML</a>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">struct </span>Data</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        Format format;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        fkyaml::node yaml;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> <a class="code" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="fkyaml__fwd_8hpp.html#a537684263bad4bb413d1fd068cd09609">fkyaml::node</a> yaml;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    } data;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aPartonUtils_8h_html"><div class="ttname"><a href="PartonUtils_8h.html">PartonUtils.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html">PDFxTMD::ConfigWrapper</a></div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:16</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_a240af9ce1e3be3decfd06b31b884f80c"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#a240af9ce1e3be3decfd06b31b884f80c">PDFxTMD::ConfigWrapper::ConfigWrapper</a></div><div class="ttdeci">ConfigWrapper()</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:24</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_a367078cd125ed836d4716e2fda6d91d8"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#a367078cd125ed836d4716e2fda6d91d8">PDFxTMD::ConfigWrapper::initializeEmptyYAML</a></div><div class="ttdeci">void initializeEmptyYAML()</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:153</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_a3eaf1b4f91176712b6ffaa9416b2c688"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#a3eaf1b4f91176712b6ffaa9416b2c688">PDFxTMD::ConfigWrapper::saveToFile</a></div><div class="ttdeci">bool saveToFile(const std::string &amp;filename) const</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:133</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_a9ade5350beb59626f80f0d1a204ab1ae"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#a9ade5350beb59626f80f0d1a204ab1ae">PDFxTMD::ConfigWrapper::get</a></div><div class="ttdeci">std::pair&lt; std::optional&lt; T &gt;, ErrorType &gt; get(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:90</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_aa3e8462340d5be9c89c53d2002c92e1c"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#aa3e8462340d5be9c89c53d2002c92e1c">PDFxTMD::ConfigWrapper::loadFromString</a></div><div class="ttdeci">bool loadFromString(const std::string &amp;data_string, Format format)</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:62</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_aace1109f92e5dfb9f612110b2540a6e1"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">PDFxTMD::ConfigWrapper::Format</a></div><div class="ttdeci">Format</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:19</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">PDFxTMD::ConfigWrapper::Format::YAML</a></div><div class="ttdeci">@ YAML</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_ad19dafcd723f05e432c28faf25d41bb1"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#ad19dafcd723f05e432c28faf25d41bb1">PDFxTMD::ConfigWrapper::set</a></div><div class="ttdeci">bool set(const std::string &amp;key, const T &amp;value)</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:113</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ConfigWrapper_html_ae10009a6ccc1d4e55532bac228d75e40"><div class="ttname"><a href="classPDFxTMD_1_1ConfigWrapper.html#ae10009a6ccc1d4e55532bac228d75e40">PDFxTMD::ConfigWrapper::loadFromFile</a></div><div class="ttdeci">bool loadFromFile(const std::filesystem::path &amp;filepath, Format format)</div><div class="ttdef"><b>Definition:</b> ConfigWrapper.h:26</div></div>
+<div class="ttc" id="aclassbasic__node_html"><div class="ttname"><a href="classbasic__node.html">basic_node</a></div><div class="ttdoc">A class to store value of YAML nodes.</div><div class="ttdef"><b>Definition:</b> node.hpp:13745</div></div>
+<div class="ttc" id="afkyaml__fwd_8hpp_html_a537684263bad4bb413d1fd068cd09609"><div class="ttname"><a href="fkyaml__fwd_8hpp.html#a537684263bad4bb413d1fd068cd09609">node</a></div><div class="ttdeci">basic_node&lt;&gt; node</div><div class="ttdoc">default YAML node value container.</div><div class="ttdef"><b>Definition:</b> fkyaml_fwd.hpp:91</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a1f89fd5fba7e034f0d3f510685cad19a"><div class="ttname"><a href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19a">PDFxTMD::ErrorType</a></div><div class="ttdeci">ErrorType</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:36</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a1f89fd5fba7e034f0d3f510685cad19aa5495d74c7a927f640d7f9117ebcc8134"><div class="ttname"><a href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aa5495d74c7a927f640d7f9117ebcc8134">PDFxTMD::ErrorType::CONFIG_KeyNotFound</a></div><div class="ttdeci">@ CONFIG_KeyNotFound</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a1f89fd5fba7e034f0d3f510685cad19aa6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aa6adf97f83acf6453d4a6a4b1070f3754">PDFxTMD::ErrorType::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a1f89fd5fba7e034f0d3f510685cad19aac6fc18442f25d8b9af3f39cff691f940"><div class="ttname"><a href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19aac6fc18442f25d8b9af3f39cff691f940">PDFxTMD::ErrorType::CONFIG_ConversionFailed</a></div><div class="ttdeci">@ CONFIG_ConversionFailed</div></div>
+<div class="ttc" id="anamespacenode__attr__mask_html_a28e7d5eedccb11d99bb66e3f30d159d1"><div class="ttname"><a href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">node_attr_mask::value</a></div><div class="ttdeci">constexpr node_attr_t value</div><div class="ttdoc">The bit mask for node value type bits.</div><div class="ttdef"><b>Definition:</b> node.hpp:7674</div></div>
+<div class="ttc" id="anode_8hpp_html"><div class="ttname"><a href="node_8hpp.html">node.hpp</a></div></div>
+<div class="ttc" id="anode_8hpp_html_a080bd0fe1a31859ecfd4d6fe93424385"><div class="ttname"><a href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a></div><div class="ttdeci">FK_YAML_DETAIL_NAMESPACE_BEGIN std::string format(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> node.hpp:1476</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

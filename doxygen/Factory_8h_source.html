@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Factory.h Source File</title>
+<title>PDFxTMDLib: Factory.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,47 +70,57 @@ $(function() {
 <div class="title">Factory.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/GenericPDF.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/ICPDF.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/IQCDCoupling.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/ITMD.h&quot;</span></div>
+<a href="Factory_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="GenericPDF_8h.html">PDFxTMDLib/GenericPDF.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ICPDF_8h.html">PDFxTMDLib/ICPDF.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IQCDCoupling_8h.html">PDFxTMDLib/IQCDCoupling.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ITMD_8h.html">PDFxTMDLib/ITMD.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CouplingFactory.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1CouplingFactory.html">CouplingFactory</a></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classPDFxTMD_1_1CouplingFactory.html">CouplingFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CouplingFactory.html#aa09bf4fcf55d9b5ca2ff4717856253e7">   20</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1CouplingFactory.html#aa09bf4fcf55d9b5ca2ff4717856253e7">CouplingFactory</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CouplingFactory.html#a45f35bd1a331005aefd3ac330fdcdf95">   27</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1IQCDCoupling.html">IQCDCoupling</a> <a class="code" href="classPDFxTMD_1_1CouplingFactory.html#a45f35bd1a331005aefd3ac330fdcdf95">mkCoupling</a>(<span class="keyword">const</span> std::string &amp;pdfSetName);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::string m_pdfSetName;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    AlphasType m_alphaType = AlphasType::ipol;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a6203b83b9569674e824d469c22868689">AlphasType</a> m_alphaType = <a class="code" href="namespacePDFxTMD.html#a6203b83b9569674e824d469c22868689a55c394e9c41838bb68c0a8d1385d064a">AlphasType::ipol</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericTMDFactory.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1GenericTMDFactory.html">GenericTMDFactory</a></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classPDFxTMD_1_1GenericTMDFactory.html">GenericTMDFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericTMDFactory.html#a5e9f8e4cd7380a49bb70875ed12dc3ab">   47</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1GenericTMDFactory.html#a5e9f8e4cd7380a49bb70875ed12dc3ab">GenericTMDFactory</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericTMDFactory.html#a190509d7a1dfdd78f8dcf87a3a7f070c">   55</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> <a class="code" href="classPDFxTMD_1_1GenericTMDFactory.html#a190509d7a1dfdd78f8dcf87a3a7f070c">mkTMD</a>(<span class="keyword">const</span> std::string &amp;pdfSetName, <span class="keywordtype">int</span> setMember);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericCPDFFactory.html">   69</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1GenericCPDFFactory.html">GenericCPDFFactory</a></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classPDFxTMD_1_1GenericCPDFFactory.html">GenericCPDFFactory</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericCPDFFactory.html#a4a3e3d67cd5d74c0c70ac5cbc41bad4d">   72</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1GenericCPDFFactory.html#a4a3e3d67cd5d74c0c70ac5cbc41bad4d">GenericCPDFFactory</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1GenericCPDFFactory.html#a3f4c13161005c18854ed5f01efe62e84">   80</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ICPDF.html">ICPDF</a> <a class="code" href="classPDFxTMD_1_1GenericCPDFFactory.html#a3f4c13161005c18854ed5f01efe62e84">mkCPDF</a>(<span class="keyword">const</span> std::string &amp;pdfSetName, <span class="keywordtype">int</span> setMember);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aGenericPDF_8h_html"><div class="ttname"><a href="GenericPDF_8h.html">GenericPDF.h</a></div></div>
+<div class="ttc" id="aICPDF_8h_html"><div class="ttname"><a href="ICPDF_8h.html">ICPDF.h</a></div></div>
+<div class="ttc" id="aIQCDCoupling_8h_html"><div class="ttname"><a href="IQCDCoupling_8h.html">IQCDCoupling.h</a></div></div>
+<div class="ttc" id="aITMD_8h_html"><div class="ttname"><a href="ITMD_8h.html">ITMD.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1CouplingFactory_html"><div class="ttname"><a href="classPDFxTMD_1_1CouplingFactory.html">PDFxTMD::CouplingFactory</a></div><div class="ttdoc">Factory class for creating QCD coupling objects.</div><div class="ttdef"><b>Definition:</b> Factory.h:17</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1CouplingFactory_html_a45f35bd1a331005aefd3ac330fdcdf95"><div class="ttname"><a href="classPDFxTMD_1_1CouplingFactory.html#a45f35bd1a331005aefd3ac330fdcdf95">PDFxTMD::CouplingFactory::mkCoupling</a></div><div class="ttdeci">IQCDCoupling mkCoupling(const std::string &amp;pdfSetName)</div><div class="ttdoc">Creates a new IQCDCoupling object.</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CouplingFactory_html_aa09bf4fcf55d9b5ca2ff4717856253e7"><div class="ttname"><a href="classPDFxTMD_1_1CouplingFactory.html#aa09bf4fcf55d9b5ca2ff4717856253e7">PDFxTMD::CouplingFactory::CouplingFactory</a></div><div class="ttdeci">CouplingFactory()=default</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1GenericCPDFFactory_html"><div class="ttname"><a href="classPDFxTMD_1_1GenericCPDFFactory.html">PDFxTMD::GenericCPDFFactory</a></div><div class="ttdoc">Factory class for creating collinear PDF objects.</div><div class="ttdef"><b>Definition:</b> Factory.h:70</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1GenericCPDFFactory_html_a3f4c13161005c18854ed5f01efe62e84"><div class="ttname"><a href="classPDFxTMD_1_1GenericCPDFFactory.html#a3f4c13161005c18854ed5f01efe62e84">PDFxTMD::GenericCPDFFactory::mkCPDF</a></div><div class="ttdeci">ICPDF mkCPDF(const std::string &amp;pdfSetName, int setMember)</div><div class="ttdoc">Creates a new ICPDF object.</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1GenericCPDFFactory_html_a4a3e3d67cd5d74c0c70ac5cbc41bad4d"><div class="ttname"><a href="classPDFxTMD_1_1GenericCPDFFactory.html#a4a3e3d67cd5d74c0c70ac5cbc41bad4d">PDFxTMD::GenericCPDFFactory::GenericCPDFFactory</a></div><div class="ttdeci">GenericCPDFFactory()=default</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1GenericTMDFactory_html"><div class="ttname"><a href="classPDFxTMD_1_1GenericTMDFactory.html">PDFxTMD::GenericTMDFactory</a></div><div class="ttdoc">Factory class for creating TMD (Transverse Momentum Dependent) PDF objects.</div><div class="ttdef"><b>Definition:</b> Factory.h:45</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1GenericTMDFactory_html_a190509d7a1dfdd78f8dcf87a3a7f070c"><div class="ttname"><a href="classPDFxTMD_1_1GenericTMDFactory.html#a190509d7a1dfdd78f8dcf87a3a7f070c">PDFxTMD::GenericTMDFactory::mkTMD</a></div><div class="ttdeci">ITMD mkTMD(const std::string &amp;pdfSetName, int setMember)</div><div class="ttdoc">Creates a new ITMD object.</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1GenericTMDFactory_html_a5e9f8e4cd7380a49bb70875ed12dc3ab"><div class="ttname"><a href="classPDFxTMD_1_1GenericTMDFactory.html#a5e9f8e4cd7380a49bb70875ed12dc3ab">PDFxTMD::GenericTMDFactory::GenericTMDFactory</a></div><div class="ttdeci">GenericTMDFactory()=default</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ICPDF_html"><div class="ttname"><a href="classPDFxTMD_1_1ICPDF.html">PDFxTMD::ICPDF</a></div><div class="ttdoc">Interface for Collinear Parton Distribution Functions (CPDFs).</div><div class="ttdef"><b>Definition:</b> ICPDF.h:21</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IQCDCoupling_html"><div class="ttname"><a href="classPDFxTMD_1_1IQCDCoupling.html">PDFxTMD::IQCDCoupling</a></div><div class="ttdef"><b>Definition:</b> IQCDCoupling.h:13</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html">PDFxTMD::ITMD</a></div><div class="ttdoc">Interface for Transverse Momentum Dependent (TMD) parton distribution functions.</div><div class="ttdef"><b>Definition:</b> ITMD.h:23</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a6203b83b9569674e824d469c22868689"><div class="ttname"><a href="namespacePDFxTMD.html#a6203b83b9569674e824d469c22868689">PDFxTMD::AlphasType</a></div><div class="ttdeci">AlphasType</div><div class="ttdef"><b>Definition:</b> YamlInfoReader.h:34</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a6203b83b9569674e824d469c22868689a55c394e9c41838bb68c0a8d1385d064a"><div class="ttname"><a href="namespacePDFxTMD.html#a6203b83b9569674e824d469c22868689a55c394e9c41838bb68c0a8d1385d064a">PDFxTMD::AlphasType::ipol</a></div><div class="ttdeci">@ ipol</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

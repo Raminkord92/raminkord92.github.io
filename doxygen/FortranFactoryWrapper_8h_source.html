@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/FortranFactoryWrapper.h Source File</title>
+<title>PDFxTMDLib: FortranFactoryWrapper.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,27 +70,37 @@ $(function() {
 <div class="title">FortranFactoryWrapper.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// FactoryWrapper.h</span></div>
+<a href="FortranFactoryWrapper_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// FactoryWrapper.h</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Factory.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Factory_8h.html">PDFxTMDLib/Factory.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// Wrapper for CouplingFactory</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">void</span> *create_coupling_factory();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">void</span> delete_coupling_factory(<span class="keywordtype">void</span> *factory);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">void</span> *mk_coupling(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName);</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a8d268b80c23e7b39008e06918137270f">    8</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#a8d268b80c23e7b39008e06918137270f">create_coupling_factory</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a7b5052f44e6abccac15f0ad0e9eabe08">    9</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="FortranFactoryWrapper_8h.html#a7b5052f44e6abccac15f0ad0e9eabe08">delete_coupling_factory</a>(<span class="keywordtype">void</span> *factory);</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a857fe8130d322b8994df546061dca002">   10</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#a857fe8130d322b8994df546061dca002">mk_coupling</a>(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// Wrapper for GenericTMDFactory</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> *create_tmd_factory();</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> delete_tmd_factory(<span class="keywordtype">void</span> *factory);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> *mk_tmd(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName, <span class="keywordtype">int</span> setMember);</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a54222f3f4d04f217342513cc94b6b8a1">   13</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#a54222f3f4d04f217342513cc94b6b8a1">create_tmd_factory</a>();</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a17317d2717e51554833b7be09cd836a2">   14</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="FortranFactoryWrapper_8h.html#a17317d2717e51554833b7be09cd836a2">delete_tmd_factory</a>(<span class="keywordtype">void</span> *factory);</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#ae4dc55441d4608591660629c363d1459">   15</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#ae4dc55441d4608591660629c363d1459">mk_tmd</a>(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName, <span class="keywordtype">int</span> setMember);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Wrapper for GenericCPDFFactory</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> *create_cpdf_factory();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> delete_cpdf_factory(<span class="keywordtype">void</span> *factory);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> *mk_cpdf(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName, <span class="keywordtype">int</span> setMember);</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a2a5c6def1bd61b31d439468a44752ab2">   18</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#a2a5c6def1bd61b31d439468a44752ab2">create_cpdf_factory</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a067082ec3cb88ba42d16d2bf5785bfb1">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="FortranFactoryWrapper_8h.html#a067082ec3cb88ba42d16d2bf5785bfb1">delete_cpdf_factory</a>(<span class="keywordtype">void</span> *factory);</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="FortranFactoryWrapper_8h.html#a3f2946ae5cf673147a14327a9a002aad">   20</a></span>&#160;    <span class="keywordtype">void</span> *<a class="code" href="FortranFactoryWrapper_8h.html#a3f2946ae5cf673147a14327a9a002aad">mk_cpdf</a>(<span class="keywordtype">void</span> *factory, <span class="keyword">const</span> <span class="keywordtype">char</span> *pdfSetName, <span class="keywordtype">int</span> setMember);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="ttc" id="aFactory_8h_html"><div class="ttname"><a href="Factory_8h.html">Factory.h</a></div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a067082ec3cb88ba42d16d2bf5785bfb1"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a067082ec3cb88ba42d16d2bf5785bfb1">delete_cpdf_factory</a></div><div class="ttdeci">void delete_cpdf_factory(void *factory)</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a17317d2717e51554833b7be09cd836a2"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a17317d2717e51554833b7be09cd836a2">delete_tmd_factory</a></div><div class="ttdeci">void delete_tmd_factory(void *factory)</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a2a5c6def1bd61b31d439468a44752ab2"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a2a5c6def1bd61b31d439468a44752ab2">create_cpdf_factory</a></div><div class="ttdeci">void * create_cpdf_factory()</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a3f2946ae5cf673147a14327a9a002aad"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a3f2946ae5cf673147a14327a9a002aad">mk_cpdf</a></div><div class="ttdeci">void * mk_cpdf(void *factory, const char *pdfSetName, int setMember)</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a54222f3f4d04f217342513cc94b6b8a1"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a54222f3f4d04f217342513cc94b6b8a1">create_tmd_factory</a></div><div class="ttdeci">void * create_tmd_factory()</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a7b5052f44e6abccac15f0ad0e9eabe08"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a7b5052f44e6abccac15f0ad0e9eabe08">delete_coupling_factory</a></div><div class="ttdeci">void delete_coupling_factory(void *factory)</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a857fe8130d322b8994df546061dca002"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a857fe8130d322b8994df546061dca002">mk_coupling</a></div><div class="ttdeci">void * mk_coupling(void *factory, const char *pdfSetName)</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_a8d268b80c23e7b39008e06918137270f"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#a8d268b80c23e7b39008e06918137270f">create_coupling_factory</a></div><div class="ttdeci">void * create_coupling_factory()</div></div>
+<div class="ttc" id="aFortranFactoryWrapper_8h_html_ae4dc55441d4608591660629c363d1459"><div class="ttname"><a href="FortranFactoryWrapper_8h.html#ae4dc55441d4608591660629c363d1459">mk_tmd</a></div><div class="ttdeci">void * mk_tmd(void *factory, const char *pdfSetName, int setMember)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

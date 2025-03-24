@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Interface/ICoupling.h Source File</title>
+<title>PDFxTMDLib: ICoupling.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,25 +70,30 @@ $(function() {
 <div class="title">ICoupling.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/InterfaceUtils.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/ICoupling.h&quot;</span></div>
+<a href="ICoupling_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfaceUtils_8h.html">PDFxTMDLib/Common/InterfaceUtils.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ICoupling_8h.html">PDFxTMDLib/Interface/ICoupling.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ICoupling.html">    8</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived&gt; <span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1ICoupling.html">ICoupling</a> : <span class="keyword">public</span> <a class="code" href="classPDFxTMD_1_1CRTPBase.html">CRTPBase</a>&lt;Derived&gt;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">double</span> AlphaQCDMu2(<span class="keywordtype">double</span> mu2)</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ICoupling.html#a5fc7055b4417815050e87843ee55bcb3">   11</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1ICoupling.html#a5fc7055b4417815050e87843ee55bcb3">AlphaQCDMu2</a>(<span class="keywordtype">double</span> mu2)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">return</span> this-&gt;derived().AlphaQCD(mu2);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">derived</a>().AlphaQCD(mu2);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aICoupling_8h_html"><div class="ttname"><a href="ICoupling_8h.html">ICoupling.h</a></div></div>
+<div class="ttc" id="aInterfaceUtils_8h_html"><div class="ttname"><a href="InterfaceUtils_8h.html">InterfaceUtils.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1CRTPBase_html"><div class="ttname"><a href="classPDFxTMD_1_1CRTPBase.html">PDFxTMD::CRTPBase</a></div><div class="ttdef"><b>Definition:</b> InterfaceUtils.h:11</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CRTPBase_html_a52e5849f1a7d43adc39ea6de876ac4c1"><div class="ttname"><a href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">PDFxTMD::CRTPBase::derived</a></div><div class="ttdeci">constexpr Derived &amp; derived() noexcept</div><div class="ttdef"><b>Definition:</b> InterfaceUtils.h:13</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ICoupling_html"><div class="ttname"><a href="classPDFxTMD_1_1ICoupling.html">PDFxTMD::ICoupling</a></div><div class="ttdef"><b>Definition:</b> ICoupling.h:9</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ICoupling_html_a5fc7055b4417815050e87843ee55bcb3"><div class="ttname"><a href="classPDFxTMD_1_1ICoupling.html#a5fc7055b4417815050e87843ee55bcb3">PDFxTMD::ICoupling::AlphaQCDMu2</a></div><div class="ttdeci">double AlphaQCDMu2(double mu2)</div><div class="ttdef"><b>Definition:</b> ICoupling.h:11</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

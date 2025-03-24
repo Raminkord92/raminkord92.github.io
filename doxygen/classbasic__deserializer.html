@@ -78,16 +78,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac3a879909627c30f99313304378b8872"><td class="memItemLeft" align="right" valign="top"><a id="ac3a879909627c30f99313304378b8872"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#ac3a879909627c30f99313304378b8872">basic_deserializer</a> ()=default</td></tr>
-<tr class="memdesc:ac3a879909627c30f99313304378b8872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classbasic__deserializer.html" title="A class which provides the feature of deserializing YAML documents.">basic_deserializer</a> object. <br /></td></tr>
+<tr class="memitem:ac3a879909627c30f99313304378b8872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#ac3a879909627c30f99313304378b8872">basic_deserializer</a> ()=default</td></tr>
+<tr class="memdesc:ac3a879909627c30f99313304378b8872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classbasic__deserializer.html" title="A class which provides the feature of deserializing YAML documents.">basic_deserializer</a> object.  <a href="classbasic__deserializer.html#ac3a879909627c30f99313304378b8872">More...</a><br /></td></tr>
 <tr class="separator:ac3a879909627c30f99313304378b8872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184e305c8751e317923f31bac28429ea"><td class="memTemplParams" colspan="2">template&lt;typename InputAdapterType , enable_if_t&lt; is_input_adapter&lt; InputAdapterType &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a184e305c8751e317923f31bac28429ea"><td class="memTemplItemLeft" align="right" valign="top">basic_node_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#a184e305c8751e317923f31bac28429ea">deserialize</a> (InputAdapterType &amp;&amp;input_adapter)</td></tr>
+<tr class="memitem:a184e305c8751e317923f31bac28429ea"><td class="memTemplItemLeft" align="right" valign="top">basic_node_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#a184e305c8751e317923f31bac28429ea">deserialize</a> (InputAdapterType &amp;&amp;<a class="el" href="node_8hpp.html#af703e0ffe80be5f9a9a6cc2c1dc5169a">input_adapter</a>)</td></tr>
 <tr class="memdesc:a184e305c8751e317923f31bac28429ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize a single YAML document into a YAML node.  <a href="classbasic__deserializer.html#a184e305c8751e317923f31bac28429ea">More...</a><br /></td></tr>
 <tr class="separator:a184e305c8751e317923f31bac28429ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be09f0e7e946ec355d2d177f672d0fd"><td class="memTemplParams" colspan="2">template&lt;typename InputAdapterType , enable_if_t&lt; is_input_adapter&lt; InputAdapterType &gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a3be09f0e7e946ec355d2d177f672d0fd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; basic_node_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#a3be09f0e7e946ec355d2d177f672d0fd">deserialize_docs</a> (InputAdapterType &amp;&amp;input_adapter)</td></tr>
+<tr class="memitem:a3be09f0e7e946ec355d2d177f672d0fd"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; basic_node_type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__deserializer.html#a3be09f0e7e946ec355d2d177f672d0fd">deserialize_docs</a> (InputAdapterType &amp;&amp;<a class="el" href="node_8hpp.html#af703e0ffe80be5f9a9a6cc2c1dc5169a">input_adapter</a>)</td></tr>
 <tr class="memdesc:a3be09f0e7e946ec355d2d177f672d0fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize multiple YAML documents into YAML nodes.  <a href="classbasic__deserializer.html#a3be09f0e7e946ec355d2d177f672d0fd">More...</a><br /></td></tr>
 <tr class="separator:a3be09f0e7e946ec355d2d177f672d0fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -102,7 +101,37 @@ class basic_deserializer&lt; BasicNodeType &gt;</h3>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac3a879909627c30f99313304378b8872"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a879909627c30f99313304378b8872">&#9670;&nbsp;</a></span>basic_deserializer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BasicNodeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasic__deserializer.html">basic_deserializer</a>&lt; BasicNodeType &gt;::<a class="el" href="classbasic__deserializer.html">basic_deserializer</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classbasic__deserializer.html" title="A class which provides the feature of deserializing YAML documents.">basic_deserializer</a> object. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a184e305c8751e317923f31bac28429ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a184e305c8751e317923f31bac28429ea">&#9670;&nbsp;</a></span>deserialize()</h2>
 
@@ -195,7 +224,7 @@ template&lt;typename InputAdapterType , enable_if_t&lt; is_input_adapter&lt; Inp
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/external/fkYAML/<a class="el" href="node_8hpp_source.html">node.hpp</a></li>
+<li><a class="el" href="node_8hpp_source.html">node.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/StringUtils.h Source File</title>
+<title>PDFxTMDLib: StringUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,50 +70,50 @@ $(function() {
 <div class="title">StringUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="StringUtils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// https://stackoverflow.com/questions/216823/how-to-trim-a-stdstring</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;locale&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> ltrim(std::string &amp;s)</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#acd77f70a0f23f839a5f7de12b4db95fc">    9</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacePDFxTMD.html#acd77f70a0f23f839a5f7de12b4db95fc">ltrim</a>(std::string &amp;<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    s.erase(s.begin(),</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            std::find_if(s.begin(), s.end(), [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); }));</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.erase(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.begin(),</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;            std::find_if(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.begin(), <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.end(), [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); }));</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> rtrim(std::string &amp;s)</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a18a005e54f33b437fce665760f26d485">   15</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacePDFxTMD.html#a18a005e54f33b437fce665760f26d485">rtrim</a>(std::string &amp;<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    s.erase(std::find_if(s.rbegin(), s.rend(), [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); })</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.erase(std::find_if(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.rbegin(), <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.rend(), [](<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ch) { return !std::isspace(ch); })</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                .base(),</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            s.end());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>.end());</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> trim(std::string &amp;s)</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#af7df82b934a6dc17d685fd8c11f9d05a">   21</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacePDFxTMD.html#af7df82b934a6dc17d685fd8c11f9d05a">trim</a>(std::string &amp;<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    rtrim(s);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ltrim(s);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a18a005e54f33b437fce665760f26d485">rtrim</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="namespacePDFxTMD.html#acd77f70a0f23f839a5f7de12b4db95fc">ltrim</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">inline</span> std::string ltrim_copy(std::string s)</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a869589ff46f82e821824d483a58f0cd8">   27</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacePDFxTMD.html#a869589ff46f82e821824d483a58f0cd8">ltrim_copy</a>(std::string <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ltrim(s);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="namespacePDFxTMD.html#acd77f70a0f23f839a5f7de12b4db95fc">ltrim</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">inline</span> std::string rtrim_copy(std::string s)</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a5eba8b8189cb8bc790f593a57c10b215">   33</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacePDFxTMD.html#a5eba8b8189cb8bc790f593a57c10b215">rtrim_copy</a>(std::string <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    rtrim(s);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="namespacePDFxTMD.html#a18a005e54f33b437fce665760f26d485">rtrim</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">inline</span> std::string trim_copy(std::string s)</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a587ae111aee6c4a64cad6b95d43d8d30">   39</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacePDFxTMD.html#a587ae111aee6c4a64cad6b95d43d8d30">trim_copy</a>(std::string <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    trim(s);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> s;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="namespacePDFxTMD.html#af7df82b934a6dc17d685fd8c11f9d05a">trim</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">s</a>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> std::string ToLower(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a912ef77e940d60565a322b7b97d33ed4">   44</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacePDFxTMD.html#a912ef77e940d60565a322b7b97d33ed4">ToLower</a>(<span class="keyword">const</span> std::string &amp;str)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string lowerStr = str;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);</div>
@@ -121,13 +121,23 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// Function to convert a string to uppercase</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">inline</span> std::string ToUpper(<span class="keyword">const</span> std::string &amp;str)</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a1462853ef2b7546c41bf6fd0a950331d">   52</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacePDFxTMD.html#a1462853ef2b7546c41bf6fd0a950331d">ToUpper</a>(<span class="keyword">const</span> std::string &amp;str)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::string upperStr = str;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::transform(upperStr.begin(), upperStr.end(), upperStr.begin(), ::toupper);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> upperStr;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a1462853ef2b7546c41bf6fd0a950331d"><div class="ttname"><a href="namespacePDFxTMD.html#a1462853ef2b7546c41bf6fd0a950331d">PDFxTMD::ToUpper</a></div><div class="ttdeci">std::string ToUpper(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:52</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a18a005e54f33b437fce665760f26d485"><div class="ttname"><a href="namespacePDFxTMD.html#a18a005e54f33b437fce665760f26d485">PDFxTMD::rtrim</a></div><div class="ttdeci">void rtrim(std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:15</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a587ae111aee6c4a64cad6b95d43d8d30"><div class="ttname"><a href="namespacePDFxTMD.html#a587ae111aee6c4a64cad6b95d43d8d30">PDFxTMD::trim_copy</a></div><div class="ttdeci">std::string trim_copy(std::string s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:39</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eba8b8189cb8bc790f593a57c10b215"><div class="ttname"><a href="namespacePDFxTMD.html#a5eba8b8189cb8bc790f593a57c10b215">PDFxTMD::rtrim_copy</a></div><div class="ttdeci">std::string rtrim_copy(std::string s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:33</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa148783419b8772daa654518a3553585a">PDFxTMD::s</a></div><div class="ttdeci">@ s</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:61</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a869589ff46f82e821824d483a58f0cd8"><div class="ttname"><a href="namespacePDFxTMD.html#a869589ff46f82e821824d483a58f0cd8">PDFxTMD::ltrim_copy</a></div><div class="ttdeci">std::string ltrim_copy(std::string s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:27</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a912ef77e940d60565a322b7b97d33ed4"><div class="ttname"><a href="namespacePDFxTMD.html#a912ef77e940d60565a322b7b97d33ed4">PDFxTMD::ToLower</a></div><div class="ttdeci">std::string ToLower(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:44</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_acd77f70a0f23f839a5f7de12b4db95fc"><div class="ttname"><a href="namespacePDFxTMD.html#acd77f70a0f23f839a5f7de12b4db95fc">PDFxTMD::ltrim</a></div><div class="ttdeci">void ltrim(std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:9</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_af7df82b934a6dc17d685fd8c11f9d05a"><div class="ttname"><a href="namespacePDFxTMD.html#af7df82b934a6dc17d685fd8c11f9d05a">PDFxTMD::trim</a></div><div class="ttdeci">void trim(std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> StringUtils.h:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

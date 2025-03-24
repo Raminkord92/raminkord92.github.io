@@ -77,14 +77,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ae4c2cc53e40596a407820c0a0a102d"><td class="memItemLeft" align="right" valign="top"><a id="a4ae4c2cc53e40596a407820c0a0a102d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_target_buffer</b> (<a class="el" href="classbasic__str__view.html">str_view</a> buffer) noexcept</td></tr>
+<tr class="memitem:a4ae4c2cc53e40596a407820c0a0a102d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classposition__tracker.html#a4ae4c2cc53e40596a407820c0a0a102d">set_target_buffer</a> (<a class="el" href="node_8hpp.html#a16c4ce5b7369228779637c6bc99e548d">str_view</a> buffer) noexcept</td></tr>
 <tr class="separator:a4ae4c2cc53e40596a407820c0a0a102d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfaa0316509aba21bfc776bd595c385"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classposition__tracker.html#a5cfaa0316509aba21bfc776bd595c385">update_position</a> (const char *p_current)</td></tr>
 <tr class="memdesc:a5cfaa0316509aba21bfc776bd595c385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the set of the current position information.  <a href="classposition__tracker.html#a5cfaa0316509aba21bfc776bd595c385">More...</a><br /></td></tr>
 <tr class="separator:a5cfaa0316509aba21bfc776bd595c385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4aff4086553b3da8872481b9a4b4a8"><td class="memItemLeft" align="right" valign="top"><a id="aaf4aff4086553b3da8872481b9a4b4a8"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_pos</b> () const noexcept</td></tr>
+<tr class="memitem:aaf4aff4086553b3da8872481b9a4b4a8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classposition__tracker.html#aaf4aff4086553b3da8872481b9a4b4a8">get_cur_pos</a> () const noexcept</td></tr>
 <tr class="separator:aaf4aff4086553b3da8872481b9a4b4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a774af7924cc80a11ce7f2202268150aa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classposition__tracker.html#a774af7924cc80a11ce7f2202268150aa">get_cur_pos_in_line</a> () const noexcept</td></tr>
 <tr class="memdesc:a774af7924cc80a11ce7f2202268150aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position in the current line.  <a href="classposition__tracker.html#a774af7924cc80a11ce7f2202268150aa">More...</a><br /></td></tr>
@@ -96,6 +94,31 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_pos</b> (
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A position tracker of the target buffer. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaf4aff4086553b3da8872481b9a4b4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf4aff4086553b3da8872481b9a4b4a8">&#9670;&nbsp;</a></span>get_cur_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t position_tracker::get_cur_pos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a774af7924cc80a11ce7f2202268150aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a774af7924cc80a11ce7f2202268150aa">&#9670;&nbsp;</a></span>get_cur_pos_in_line()</h2>
 
@@ -152,6 +175,32 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_pos</b> (
 
 </div>
 </div>
+<a id="a4ae4c2cc53e40596a407820c0a0a102d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae4c2cc53e40596a407820c0a0a102d">&#9670;&nbsp;</a></span>set_target_buffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void position_tracker::set_target_buffer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="node_8hpp.html#a16c4ce5b7369228779637c6bc99e548d">str_view</a>&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5cfaa0316509aba21bfc776bd595c385"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cfaa0316509aba21bfc776bd595c385">&#9670;&nbsp;</a></span>update_position()</h2>
 
@@ -188,7 +237,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_cur_pos</b> (
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/external/fkYAML/<a class="el" href="node_8hpp_source.html">node.hpp</a></li>
+<li><a class="el" href="node_8hpp_source.html">node.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

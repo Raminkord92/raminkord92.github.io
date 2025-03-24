@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/PDFUtils.h Source File</title>
+<title>PDFxTMDLib: PDFUtils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,39 +70,48 @@ $(function() {
 <div class="title">PDFUtils.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/IReader.h&quot;</span></div>
+<a href="PDFUtils_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IReader_8h.html">PDFxTMDLib/Interface/IReader.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> isInRangeX(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x)</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a097522f2f5ce32b6053b0fba0b0d4781">    6</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacePDFxTMD.html#a097522f2f5ce32b6053b0fba0b0d4781">isInRangeX</a>(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x)</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">auto</span> [xmin, xmax] = reader.getBoundaryValues(PhaseSpaceComponent::X);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">auto</span> [xmin, xmax] = reader.getBoundaryValues(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca02129bb861061d1a052c592e2dc6b383">PhaseSpaceComponent::X</a>);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> x &gt;= xmin &amp;&amp; x &lt;= xmax;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> isInRangeQ2(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> q2)</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#adf1c0b6860f9db895ea5f4afb6d6df32">   11</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacePDFxTMD.html#adf1c0b6860f9db895ea5f4afb6d6df32">isInRangeQ2</a>(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> q2)</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> [q2min, q2max] = reader.getBoundaryValues(PhaseSpaceComponent::Q2);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">auto</span> [q2min, q2max] = reader.getBoundaryValues(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca3bb284154c27cd76e8dbac26517addbd">PhaseSpaceComponent::Q2</a>);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">return</span> q2 &gt;= q2min &amp;&amp; q2 &lt;= q2max;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> isInRangeKt2(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> kt2)</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a66a88a2f719779d9ab77314db3878c62">   16</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacePDFxTMD.html#a66a88a2f719779d9ab77314db3878c62">isInRangeKt2</a>(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> kt2)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> [kt2min, kt2max] = reader.getBoundaryValues(PhaseSpaceComponent::Kt2);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">auto</span> [kt2min, kt2max] = reader.getBoundaryValues(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82cac0578f0c669af352662776685633a8c5">PhaseSpaceComponent::Kt2</a>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> kt2 &gt;= kt2min &amp;&amp; kt2 &lt;= kt2max;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Check if the point (x, mu) is within the range of the PDF</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// set</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span> isInRange(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> mu2)</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#a0cfda370abf50f1735056170d55076af">   23</a></span>&#160; <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacePDFxTMD.html#a0cfda370abf50f1735056170d55076af">isInRange</a>(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> mu2)</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> [xmin, xmax] = std::move(reader.getBoundaryValues(PhaseSpaceComponent::X));</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> [q2min, q2max] = std::move(reader.getBoundaryValues(PhaseSpaceComponent::Q2));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> [xmin, xmax] = std::move(reader.getBoundaryValues(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca02129bb861061d1a052c592e2dc6b383">PhaseSpaceComponent::X</a>));</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> [q2min, q2max] = std::move(reader.getBoundaryValues(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca3bb284154c27cd76e8dbac26517addbd">PhaseSpaceComponent::Q2</a>));</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> x &gt;= xmin &amp;&amp; x &lt;= xmax &amp;&amp; mu2 &gt;= q2min &amp;&amp; mu2 &lt;= q2max;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> isInRange(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespacePDFxTMD.html#aee98dd4cc0abafe0c08af16a0cd9da60">   29</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader&gt; <span class="keywordtype">bool</span> <a class="code" href="namespacePDFxTMD.html#a0cfda370abf50f1735056170d55076af">isInRange</a>(<span class="keyword">const</span> Reader &amp;reader, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> isInRange&lt;Reader&gt;(reader, x, mu2) &amp;&amp; isInRangeKt2&lt;Reader&gt;(reader, kt2);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aIReader_8h_html"><div class="ttname"><a href="IReader_8h.html">IReader.h</a></div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a097522f2f5ce32b6053b0fba0b0d4781"><div class="ttname"><a href="namespacePDFxTMD.html#a097522f2f5ce32b6053b0fba0b0d4781">PDFxTMD::isInRangeX</a></div><div class="ttdeci">bool isInRangeX(const Reader &amp;reader, double x)</div><div class="ttdef"><b>Definition:</b> PDFUtils.h:6</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a0cfda370abf50f1735056170d55076af"><div class="ttname"><a href="namespacePDFxTMD.html#a0cfda370abf50f1735056170d55076af">PDFxTMD::isInRange</a></div><div class="ttdeci">bool isInRange(const Reader &amp;reader, double x, double mu2)</div><div class="ttdef"><b>Definition:</b> PDFUtils.h:23</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a66a88a2f719779d9ab77314db3878c62"><div class="ttname"><a href="namespacePDFxTMD.html#a66a88a2f719779d9ab77314db3878c62">PDFxTMD::isInRangeKt2</a></div><div class="ttdeci">bool isInRangeKt2(const Reader &amp;reader, double kt2)</div><div class="ttdef"><b>Definition:</b> PDFUtils.h:16</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a77f152f98435b980a4645114a53af82ca02129bb861061d1a052c592e2dc6b383"><div class="ttname"><a href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca02129bb861061d1a052c592e2dc6b383">PDFxTMD::PhaseSpaceComponent::X</a></div><div class="ttdeci">@ X</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a77f152f98435b980a4645114a53af82ca3bb284154c27cd76e8dbac26517addbd"><div class="ttname"><a href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82ca3bb284154c27cd76e8dbac26517addbd">PDFxTMD::PhaseSpaceComponent::Q2</a></div><div class="ttdeci">@ Q2</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a77f152f98435b980a4645114a53af82cac0578f0c669af352662776685633a8c5"><div class="ttname"><a href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82cac0578f0c669af352662776685633a8c5">PDFxTMD::PhaseSpaceComponent::Kt2</a></div><div class="ttdeci">@ Kt2</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_adf1c0b6860f9db895ea5f4afb6d6df32"><div class="ttname"><a href="namespacePDFxTMD.html#adf1c0b6860f9db895ea5f4afb6d6df32">PDFxTMD::isInRangeQ2</a></div><div class="ttdeci">bool isInRangeQ2(const Reader &amp;reader, double q2)</div><div class="ttdef"><b>Definition:</b> PDFUtils.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: Main Page</title>
+<title>PDFxTMDLib: PDFxTMDLib</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,11 +61,165 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">PDFxTMDLib Documentation</div>  </div>
+<div class="title">PDFxTMDLib </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> PDFxTMDLib is a high-performance C++ library for parton distribution functions (PDFs) that integrates both collinear PDFs (cPDFs) and transverse momentum-dependent PDFs (TMDs). It is designed with modern C++17 principles to achieve excellent performance and extensibility. The library provides interfaces for reading PDF grid files and supports standard formats from LHAPDF and TMDLib, while allowing adaptability to non-standard formats.</p>
+<p>For a comprehensive understanding of PDFxTMDLib, please refer to the full paper available on <a href="https://arxiv.org/abs/2412.16680">https://arxiv.org/abs/2412.16680</a>.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Features</h1>
+<ul>
+<li>Unified interface for collinear PDFs and TMDs</li>
+<li>Type-erased interfaces for easy extension</li>
+<li>Factory design pattern for simple instantiation</li>
+<li>Cross-platform support (Linux and Windows)</li>
+<li>Thread-safety</li>
+<li>Optional Fortran and python wrappers</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Installation</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Requirements</h2>
+<ol type="1">
+<li>C++17 compatible compiler</li>
+<li>CMake 3.30 or higher</li>
+<li>Install g++: <div class="fragment"><div class="line">sudo apt install g++</div>
+</div><!-- fragment --> </li>
+</ol>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Option 1: Package Manager (Ubuntu/Debian)</h2>
+<ol type="1">
+<li>Download the <code>.deb</code> file from the <a href="https://github.com/Raminkord92/PDFxTMD/releases">Releases</a> section of GitHub. For example, download the current release: <code>PDFxTMDLib-0.1.1-Linux.deb</code>.</li>
+<li>Install with: <div class="fragment"><div class="line">sudo dpkg -i PDFxTMDLib-0.1.1-Linux.deb</div>
+</div><!-- fragment --></li>
+</ol>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Option 2: Building from Source</h2>
+<div class="fragment"><div class="line"># Clone the repository</div>
+<div class="line">git clone https://github.com/Raminkord92/PDFxTMD.git</div>
+<div class="line">cd PDFxTMD</div>
+<div class="line"> </div>
+<div class="line"># Create build directory</div>
+<div class="line">mkdir build &amp;&amp; cd build</div>
+<div class="line"> </div>
+<div class="line"># Configure with CMake</div>
+<div class="line">cmake .. -DCMAKE_BUILD_TYPE=Release</div>
+<div class="line"> </div>
+<div class="line"># Build and install</div>
+<div class="line">make</div>
+<div class="line">sudo make install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+Quick Start</h1>
+<h2><a class="anchor" id="autotoc_md7"></a>
+1. Write Your Program</h2>
+<p>Create a <code>main.cpp</code> file with the following code:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="Factory_8h.html">PDFxTMDLib/Factory.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">using namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a>;</div>
+<div class="line">    GenericCPDFFactory cPDF;</div>
+<div class="line">    <span class="keyword">auto</span> CJ12min = cPDF.mkCPDF(<span class="stringliteral">&quot;CJ12min&quot;</span>, 0);</div>
+<div class="line">    <span class="keywordtype">double</span> x = 0.01;</div>
+<div class="line">    <span class="keywordtype">double</span> mu2 = 100;</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Up quark PDF: &quot;</span> &lt;&lt; CJ12min.pdf(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa28f9b2229567fe8194ae32a905c5707f">PartonFlavor::u</a>, x, mu2) &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aFactory_8h_html"><div class="ttname"><a href="Factory_8h.html">Factory.h</a></div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bfa28f9b2229567fe8194ae32a905c5707f"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfa28f9b2229567fe8194ae32a905c5707f">PDFxTMD::u</a></div><div class="ttdeci">@ u</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:59</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md8"></a>
+2. Compile Your Program</h2>
+<p>Compile the program using the following command: </p><div class="fragment"><div class="line">g++ main.cpp -lPDFxTMDLib -o test.out</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md9"></a>
+3. Execute Your Program</h2>
+<p>Run the compiled program: </p><div class="fragment"><div class="line">./test.out</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md10"></a>
+Basic Usage</h1>
+<p>Here is a simple example of how to use PDFxTMDLib:</p>
+<div class="fragment"><div class="line"><span class="comment">// TMD example</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a>;</div>
+<div class="line">GenericTMDFactory PBTMDObj;</div>
+<div class="line"><span class="keyword">auto</span> PBTMDObj_ = PBTMDObj.mkTMD(<span class="stringliteral">&quot;PB-NLO-HERAI+II-2023-set2-qs=0.74&quot;</span>, 0);</div>
+<div class="line"><span class="keywordtype">double</span> x = 0.0001;</div>
+<div class="line"><span class="keywordtype">double</span> kt2 = 10;</div>
+<div class="line"><span class="keywordtype">double</span> mu2 = 100;</div>
+<div class="line"><span class="keywordtype">double</span> gPBTMD = PBTMDObj_.tmd(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfae4ebae34732d2d4b4570074d2338246e">PartonFlavor::g</a>, x, kt2, mu2);</div>
+<div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Gluon TMD of PB is: &quot;</span> &lt;&lt; gPBTMD &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Collinear PDF example</span></div>
+<div class="line">GenericCPDFFactory ct18Obj;</div>
+<div class="line"><span class="keyword">auto</span> ct18Obj_ = ct18Obj.mkCPDF(<span class="stringliteral">&quot;CT18NLO&quot;</span>, 0);</div>
+<div class="line"><span class="keywordtype">double</span> gCt18Obj_ = ct18Obj_.pdf(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfae4ebae34732d2d4b4570074d2338246e">PartonFlavor::g</a>, x, mu2);</div>
+<div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Gluon PDF of CT18 is: &quot;</span> &lt;&lt; gCt18Obj_ &lt;&lt; std::endl;</div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bfae4ebae34732d2d4b4570074d2338246e"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bfae4ebae34732d2d4b4570074d2338246e">PDFxTMD::g</a></div><div class="ttdeci">@ g</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:65</div></div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md11"></a>
+Advanced Usage</h1>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Working with All Parton Flavors</h2>
+<p>Retrieve PDFs for all flavors simultaneously:</p>
+<div class="fragment"><div class="line">std::array&lt;double, DEFAULT_TOTAL_PDFS&gt; allFlavors;</div>
+<div class="line">CJ12min.pdf(x, mu2, allFlavors);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Access individual flavors from the array</span></div>
+<div class="line"><span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a>; i++) {</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Flavor &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; allFlavors[i] &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="ttc" id="aPartonUtils_8h_html_a000d3541951a026b0bf5fa18df7f8900"><div class="ttname"><a href="PartonUtils_8h.html#a000d3541951a026b0bf5fa18df7f8900">DEFAULT_TOTAL_PDFS</a></div><div class="ttdeci">#define DEFAULT_TOTAL_PDFS</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:19</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+Custom PDF Implementation</h2>
+<p>Create PDFs with specific reader, interpolator, and extrapolator components:</p>
+<div class="fragment"><div class="line"><span class="keyword">using</span> PDFTag = <a class="code" href="structPDFxTMD_1_1CollinearPDFTag.html">PDFxTMD::CollinearPDFTag</a>;</div>
+<div class="line"><span class="keyword">using</span> ReaderType = <a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">PDFxTMD::CDefaultLHAPDFFileReader</a>;</div>
+<div class="line"><span class="keyword">using</span> InterpolatorType = <a class="code" href="classPDFxTMD_1_1CLHAPDFBicubicInterpolator.html">PDFxTMD::CLHAPDFBicubicInterpolator</a>;</div>
+<div class="line"><span class="keyword">using</span> ExtrapolatorType = <a class="code" href="classPDFxTMD_1_1CErrExtrapolator.html">PDFxTMD::CErrExtrapolator</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create custom PDF with specific components</span></div>
+<div class="line"><a class="code" href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF&lt;PDFTag, ReaderType, InterpolatorType, ExtrapolatorType&gt;</a> </div>
+<div class="line">    customPDF(<span class="stringliteral">&quot;MMHT2014lo68cl&quot;</span>, 0);</div>
+<div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">PDFxTMD::CDefaultLHAPDFFileReader</a></div><div class="ttdef"><b>Definition:</b> CDefaultLHAPDFFileReader.h:10</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CErrExtrapolator_html"><div class="ttname"><a href="classPDFxTMD_1_1CErrExtrapolator.html">PDFxTMD::CErrExtrapolator</a></div><div class="ttdef"><b>Definition:</b> CErrExtrapolator.h:12</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CLHAPDFBicubicInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1CLHAPDFBicubicInterpolator.html">PDFxTMD::CLHAPDFBicubicInterpolator</a></div><div class="ttdef"><b>Definition:</b> CLHAPDFBicubicInterpolator.h:11</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1GenericPDF_html"><div class="ttname"><a href="classPDFxTMD_1_1GenericPDF.html">PDFxTMD::GenericPDF</a></div><div class="ttdef"><b>Definition:</b> GenericPDF.h:74</div></div>
+<div class="ttc" id="astructPDFxTMD_1_1CollinearPDFTag_html"><div class="ttname"><a href="structPDFxTMD_1_1CollinearPDFTag.html">PDFxTMD::CollinearPDFTag</a></div><div class="ttdef"><b>Definition:</b> GenericPDF.h:33</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md14"></a>
+QCD Coupling</h2>
+<div class="fragment"><div class="line"><a class="code" href="classPDFxTMD_1_1CouplingFactory.html">PDFxTMD::CouplingFactory</a> couplingFactory;</div>
+<div class="line"><span class="keyword">auto</span> coupling = couplingFactory.<a class="code" href="classPDFxTMD_1_1CouplingFactory.html#a45f35bd1a331005aefd3ac330fdcdf95">mkCoupling</a>(<span class="stringliteral">&quot;MMHT2014lo68cl&quot;</span>);</div>
+<div class="line">std::cout &lt;&lt; <span class="stringliteral">&quot;Alpha_s at mu2=100: &quot;</span> &lt;&lt; coupling.<a class="code" href="classPDFxTMD_1_1IQCDCoupling.html#a22b05a562a808030053daf0adcd923ab">AlphaQCDMu2</a>(100) &lt;&lt; std::endl;</div>
+<div class="ttc" id="aclassPDFxTMD_1_1CouplingFactory_html"><div class="ttname"><a href="classPDFxTMD_1_1CouplingFactory.html">PDFxTMD::CouplingFactory</a></div><div class="ttdoc">Factory class for creating QCD coupling objects.</div><div class="ttdef"><b>Definition:</b> Factory.h:17</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CouplingFactory_html_a45f35bd1a331005aefd3ac330fdcdf95"><div class="ttname"><a href="classPDFxTMD_1_1CouplingFactory.html#a45f35bd1a331005aefd3ac330fdcdf95">PDFxTMD::CouplingFactory::mkCoupling</a></div><div class="ttdeci">IQCDCoupling mkCoupling(const std::string &amp;pdfSetName)</div><div class="ttdoc">Creates a new IQCDCoupling object.</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1IQCDCoupling_html_a22b05a562a808030053daf0adcd923ab"><div class="ttname"><a href="classPDFxTMD_1_1IQCDCoupling.html#a22b05a562a808030053daf0adcd923ab">PDFxTMD::IQCDCoupling::AlphaQCDMu2</a></div><div class="ttdeci">double AlphaQCDMu2(double mu2) const</div><div class="ttdef"><b>Definition:</b> IQCDCoupling.h:36</div></div>
+</div><!-- fragment --><p>For more comprehensive examples, please refer to the <a href="examples/tutorial.cpp">tutorial.cpp</a> file in the examples directory, which demonstrates various approaches to using the library features.</p>
+<h1><a class="anchor" id="autotoc_md15"></a>
+Configuration</h1>
+<p>PDFxTMDLib uses YAML configuration files to locate PDF sets:</p>
+<ul>
+<li><b>Windows</b>: <code>C:\ProgramData\PDFxTMDLib\config.yaml</code></li>
+<li><b>Linux</b>: <code>~/.PDFxTMDLib/config.yaml</code></li>
+</ul>
+<p>Example configuration: </p><div class="fragment"><div class="line">paths: &quot;/home/user/pdfs|/usr/share/PDFxTMDLib/pdfs&quot;</div>
+</div><!-- fragment --><p>Multiple paths can be specified with the <code>|</code> separator. By default, the current directory and standard installation paths are already included.</p>
+<h1><a class="anchor" id="autotoc_md16"></a>
+Performance</h1>
+<p>PDFxTMDLib is optimized for high performance. The library includes benchmarking tools to compare PDFxTMDLib with other libraries like LHAPDF and TMDLib in the <code>performance_vs_LHAPDF_TMDLIB</code> directory, where the results are shown in the article <a href="https://arxiv.org/abs/2412.16680">https://arxiv.org/abs/2412.16680</a>,</p>
+<h1><a class="anchor" id="autotoc_md17"></a>
+Visualization Tools</h1>
+<p>For visualization of PDFs and TMDs, you can use the <a href="https://github.com/Raminkord92/QtPDFxTMDPlotter">QtPDFxTMDPlotter</a>, a Qt-based graphical tool built on top of PDFxTMDLib. This tool provides an intuitive interface for plotting and comparing different PDF and TMD sets, making it easier to visualize and analyze the distributions.</p>
+<h1><a class="anchor" id="autotoc_md18"></a>
+Contributing</h1>
+<p>Contributions are welcome! If you are interested in contributing, please don't hesitate to contact me at <a href="#" onclick="location.href='mai'+'lto:'+'ram'+'in'+'kor'+'d9'+'2@g'+'ma'+'il.'+'co'+'m'; return false;">raminkord92@gmail.com</a>.</p>
+<h1><a class="anchor" id="autotoc_md19"></a>
+License</h1>
+<p>This project is licensed under the Creative Commons Attribution 4.0 International License. For more details, please see the [LICENSE](LICENSE) file.</p>
+<h1><a class="anchor" id="autotoc_md20"></a>
+Contact</h1>
+<p>For any inquiries, please contact <a href="#" onclick="location.href='mai'+'lto:'+'ram'+'in'+'kor'+'d9'+'2@g'+'ma'+'il.'+'co'+'m'; return false;">raminkord92@gmail.com</a>. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

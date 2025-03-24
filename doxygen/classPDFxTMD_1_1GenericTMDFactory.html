@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>PDFxTMD</b></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericTMDFactory.html">GenericTMDFactory</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacePDFxTMD.html">PDFxTMD</a></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericTMDFactory.html">GenericTMDFactory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,6 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5e9f8e4cd7380a49bb70875ed12dc3ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericTMDFactory.html#a5e9f8e4cd7380a49bb70875ed12dc3ab">GenericTMDFactory</a> ()=default</td></tr>
+<tr class="separator:a5e9f8e4cd7380a49bb70875ed12dc3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190509d7a1dfdd78f8dcf87a3a7f070c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPDFxTMD_1_1ITMD.html">ITMD</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericTMDFactory.html#a190509d7a1dfdd78f8dcf87a3a7f070c">mkTMD</a> (const std::string &amp;pdfSetName, int setMember)</td></tr>
 <tr class="memdesc:a190509d7a1dfdd78f8dcf87a3a7f070c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classPDFxTMD_1_1ITMD.html" title="Interface for Transverse Momentum Dependent (TMD) parton distribution functions.">ITMD</a> object.  <a href="classPDFxTMD_1_1GenericTMDFactory.html#a190509d7a1dfdd78f8dcf87a3a7f070c">More...</a><br /></td></tr>
 <tr class="separator:a190509d7a1dfdd78f8dcf87a3a7f070c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,7 +91,33 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Factory class for creating TMD (Transverse Momentum Dependent) PDF objects. </p>
 <p>This class provides a factory method to create <a class="el" href="classPDFxTMD_1_1ITMD.html" title="Interface for Transverse Momentum Dependent (TMD) parton distribution functions.">ITMD</a> objects from a specified PDF set name and set member. It handles the instantiation of the appropriate TMD implementation based on the provided parameters. This class is on top of the <a class="el" href="classPDFxTMD_1_1GenericPDF.html">GenericPDF</a> class. Note: Users should be aware that the list of different TMD or PDF set is read from the yaml file located in C:\ProgramData\PDFxTMDLib\config.yaml (on windows) or ~/.PDFxTMDLib/config.yaml (on linux). here is an example of the config.yaml file: paths: "C:\\Users\\Ramin\\Documents\\code|C:/Users/Ramin/Pictures" This means that the user can have multiple PDF sets in different directories. The paths are separated by |. <br  />
  Also by default the current directory and also C:\ProgramData\PDFxTMDLib\ (on windows) or ~/usr/local/share/PDFxTMDLib/ (on linux) are also included. Note: This class by default uses <a class="el" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">CDefaultLHAPDFFileReader</a> to read the PDF set. If you want to use a different reader, you modify the yaml info file of the PDF set and adding or modify "Reader" field. For interpolation, you can modify the "Interpolator" field. The default interpolator is <a class="el" href="classPDFxTMD_1_1TTrilinearInterpolator.html">TTrilinearInterpolator</a>. For extrapolation, you can modify the "Extrapolator" field. The default extrapolator is <a class="el" href="classPDFxTMD_1_1TZeroExtrapolator.html">TZeroExtrapolator</a> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5e9f8e4cd7380a49bb70875ed12dc3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9f8e4cd7380a49bb70875ed12dc3ab">&#9670;&nbsp;</a></span>GenericTMDFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PDFxTMD::GenericTMDFactory::GenericTMDFactory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a190509d7a1dfdd78f8dcf87a3a7f070c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a190509d7a1dfdd78f8dcf87a3a7f070c">&#9670;&nbsp;</a></span>mkTMD()</h2>
 
@@ -129,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/<a class="el" href="Factory_8h_source.html">Factory.h</a></li>
+<li><a class="el" href="Factory_8h_source.html">Factory.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

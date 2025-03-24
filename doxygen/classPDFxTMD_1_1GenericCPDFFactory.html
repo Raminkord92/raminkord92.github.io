@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>PDFxTMD</b></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericCPDFFactory.html">GenericCPDFFactory</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacePDFxTMD.html">PDFxTMD</a></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1GenericCPDFFactory.html">GenericCPDFFactory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,6 +81,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4a3e3d67cd5d74c0c70ac5cbc41bad4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericCPDFFactory.html#a4a3e3d67cd5d74c0c70ac5cbc41bad4d">GenericCPDFFactory</a> ()=default</td></tr>
+<tr class="separator:a4a3e3d67cd5d74c0c70ac5cbc41bad4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4c13161005c18854ed5f01efe62e84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPDFxTMD_1_1ICPDF.html">ICPDF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1GenericCPDFFactory.html#a3f4c13161005c18854ed5f01efe62e84">mkCPDF</a> (const std::string &amp;pdfSetName, int setMember)</td></tr>
 <tr class="memdesc:a3f4c13161005c18854ed5f01efe62e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classPDFxTMD_1_1ICPDF.html" title="Interface for Collinear Parton Distribution Functions (CPDFs).">ICPDF</a> object.  <a href="classPDFxTMD_1_1GenericCPDFFactory.html#a3f4c13161005c18854ed5f01efe62e84">More...</a><br /></td></tr>
 <tr class="separator:a3f4c13161005c18854ed5f01efe62e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,7 +91,33 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Factory class for creating collinear PDF objects. </p>
 <p>This class provides a factory method to create <a class="el" href="classPDFxTMD_1_1ICPDF.html" title="Interface for Collinear Parton Distribution Functions (CPDFs).">ICPDF</a> objects from a specified PDF set name and set member. It handles the instantiation of the appropriate collinear PDF implementation based on the provided parameters. Note: Users should be aware that the list of different TMD or PDF set is read from the yaml file located in C:\ProgramData\PDFxTMDLib\config.yaml (on windows) or ~/.PDFxTMDLib/config.yaml (on linux). here is an example of the config.yaml file: paths: "C:\\Users\\Ramin\\Documents\\code|C:/Users/Ramin/Pictures" This means that the user can have multiple PDF sets in different directories. The paths are separated by |. <br  />
  Also by default the current directory and also C:\ProgramData\PDFxTMDLib\ (on windows) or ~/usr/local/share/PDFxTMDLib/ (on linux) are also included. Note: This class by default uses <a class="el" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">CDefaultLHAPDFFileReader</a> to read the PDF set. If you want to use a different reader, you modify the yaml info file of the PDF set and adding or modify "Reader" field. For interpolation, you can modify the "Interpolator" field. The default interpolator is <a class="el" href="classPDFxTMD_1_1CLHAPDFBilinearInterpolator.html">CLHAPDFBilinearInterpolator</a>. For extrapolation, you can modify the "Extrapolator" field. The default extrapolator is <a class="el" href="classPDFxTMD_1_1CContinuationExtrapolator.html">CContinuationExtrapolator</a> </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4a3e3d67cd5d74c0c70ac5cbc41bad4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3e3d67cd5d74c0c70ac5cbc41bad4d">&#9670;&nbsp;</a></span>GenericCPDFFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PDFxTMD::GenericCPDFFactory::GenericCPDFFactory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3f4c13161005c18854ed5f01efe62e84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f4c13161005c18854ed5f01efe62e84">&#9670;&nbsp;</a></span>mkCPDF()</h2>
 
@@ -129,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/<a class="el" href="Factory_8h_source.html">Factory.h</a></li>
+<li><a class="el" href="Factory_8h_source.html">Factory.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

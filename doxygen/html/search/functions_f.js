@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['rbegin_769',['rbegin',['../classbasic__node.html#ac77c1f6cc400ad32cf1e9c6f22c59b7a',1,'basic_node::rbegin()'],['../classbasic__node.html#a60329a48e7d4fb54cd56df0c98a7ef1c',1,'basic_node::rbegin() const'],['../classbasic__str__view.html#afc263ceb892db0063ca8f7066217b4c3',1,'basic_str_view::rbegin()']]],
+  ['release_770',['release',['../classnode__ref__storage.html#ad7a9cffa1e9f3ac525f56c2bfa788172',1,'node_ref_storage']]],
+  ['remove_5fprefix_771',['remove_prefix',['../classbasic__str__view.html#a91a0e0c5953fd30f87041239f742ee14',1,'basic_str_view']]],
+  ['remove_5fsuffix_772',['remove_suffix',['../classbasic__str__view.html#a6a18d2c28e925ed31df3d2dba17fb1fb',1,'basic_str_view']]],
+  ['rend_773',['rend',['../classbasic__str__view.html#a6506f9a6dd1ecbb673ebcaa5d3eadddd',1,'basic_str_view::rend()'],['../classbasic__node.html#af2f394c0b156a09b3bb37018ceef4c80',1,'basic_node::rend()'],['../classbasic__node.html#a1b78c7bb62a27c89c3af146bdf37e209',1,'basic_node::rend() const']]],
+  ['resolve_5ftag_774',['resolve_tag',['../classtag__resolver.html#a9f1025df6ca2485e69d7b81d39f3a2bd',1,'tag_resolver']]],
+  ['reverse_5fiterator_775',['reverse_iterator',['../classreverse__iterator.html#a4728b97f6b191bc1f517a5527ed6770a',1,'reverse_iterator::reverse_iterator()=default'],['../classreverse__iterator.html#af19050dec766715e8daa613a0b5ed70a',1,'reverse_iterator::reverse_iterator(const reverse_iterator &amp;)=default'],['../classreverse__iterator.html#a0efd08d06fe486ec6fdf3fe81fbd7c7f',1,'reverse_iterator::reverse_iterator(reverse_iterator &amp;&amp;)=default'],['../classreverse__iterator.html#a1064153e029edbf020c7df19e4797f44',1,'reverse_iterator::reverse_iterator(const Iterator &amp;i) noexcept']]],
+  ['rfind_776',['rfind',['../classbasic__str__view.html#afd4cccdc81e5848d01921d055f6390c2',1,'basic_str_view::rfind(basic_str_view sv, size_type pos=npos) const noexcept'],['../classbasic__str__view.html#a2865abab27ba96f79ab877c5eac0d588',1,'basic_str_view::rfind(CharT c, size_type pos=npos) const noexcept'],['../classbasic__str__view.html#aa45bed5a00888cc587e1c3ecc7df3b26',1,'basic_str_view::rfind(const CharT *s, size_type pos, size_type n) const noexcept'],['../classbasic__str__view.html#a00fc44f8e5d9e749ecaf512491b378bb',1,'basic_str_view::rfind(const CharT *s, size_type pos=npos) const noexcept']]]
+];

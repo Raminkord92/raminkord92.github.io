@@ -151,8 +151,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7278d19b4375b63ac4c0d050ca7c634e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a7278d19b4375b63ac4c0d050ca7c634e">basic_node</a> (const <a class="el" href="classbasic__node.html#a728ccc95c647ee252b3100c2b4ad2da8">node_t</a> <a class="el" href="classbasic__node.html#a345ecaef9f9e42d1278a0cc3fd8ea295">type</a>)</td></tr>
 <tr class="memdesc:a7278d19b4375b63ac4c0d050ca7c634e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object with a specified type.  <a href="classbasic__node.html#a7278d19b4375b63ac4c0d050ca7c634e">More...</a><br /></td></tr>
 <tr class="separator:a7278d19b4375b63ac4c0d050ca7c634e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66bb51306ed961a0aa8aabfaf0e273d1"><td class="memItemLeft" align="right" valign="top"><a id="a66bb51306ed961a0aa8aabfaf0e273d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>basic_node</b> (const node_type <a class="el" href="classbasic__node.html#a345ecaef9f9e42d1278a0cc3fd8ea295">type</a>)</td></tr>
+<tr class="memitem:a66bb51306ed961a0aa8aabfaf0e273d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a66bb51306ed961a0aa8aabfaf0e273d1">basic_node</a> (const <a class="el" href="node_8hpp.html#a881d85c4d69a945b007a50acdff3a238">node_type</a> <a class="el" href="classbasic__node.html#a345ecaef9f9e42d1278a0cc3fd8ea295">type</a>)</td></tr>
 <tr class="separator:a66bb51306ed961a0aa8aabfaf0e273d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f611b4b4ca3ea1fd45c9006917ddd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#ae5f611b4b4ca3ea1fd45c9006917ddd0">basic_node</a> (const <a class="el" href="classbasic__node.html">basic_node</a> &amp;rhs)</td></tr>
 <tr class="memdesc:ae5f611b4b4ca3ea1fd45c9006917ddd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor of the <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> class.  <a href="classbasic__node.html#ae5f611b4b4ca3ea1fd45c9006917ddd0">More...</a><br /></td></tr>
@@ -161,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af27ce2f6f47ea4b143646fad96cde1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor of the <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> class.  <a href="classbasic__node.html#af27ce2f6f47ea4b143646fad96cde1dc">More...</a><br /></td></tr>
 <tr class="separator:af27ce2f6f47ea4b143646fad96cde1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63840f9e5913304eb448d224b67eb966"><td class="memTemplParams" colspan="2">template&lt;typename CompatibleType , typename U  = detail::remove_cvref_t&lt;CompatibleType&gt;, detail::enable_if_t&lt; detail::conjunction&lt; detail::negation&lt; detail::is_basic_node&lt; U &gt;&gt;, detail::disjunction&lt; detail::is_node_compatible_type&lt; basic_node, U &gt;&gt;&gt;::value, int &gt;  = 0&gt; </td></tr>
-<tr class="memitem:a63840f9e5913304eb448d224b67eb966"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a63840f9e5913304eb448d224b67eb966">basic_node</a> (CompatibleType &amp;&amp;val) noexcept(noexcept(ConverterType&lt; U, void &gt;::to_node(std::declval&lt; <a class="el" href="classbasic__node.html">basic_node</a> &amp; &gt;(), std::declval&lt; CompatibleType &gt;())))</td></tr>
+<tr class="memitem:a63840f9e5913304eb448d224b67eb966"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a63840f9e5913304eb448d224b67eb966">basic_node</a> (CompatibleType &amp;&amp;val) noexcept(noexcept(ConverterType&lt; U, void &gt;::<a class="el" href="node_8hpp.html#a1f7ae98d52265316a5c797c06b0cf994">to_node</a>(std::declval&lt; <a class="el" href="classbasic__node.html">basic_node</a> &amp; &gt;(), std::declval&lt; CompatibleType &gt;())))</td></tr>
 <tr class="memdesc:a63840f9e5913304eb448d224b67eb966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object from a value of compatible types.  <a href="classbasic__node.html#a63840f9e5913304eb448d224b67eb966">More...</a><br /></td></tr>
 <tr class="separator:a63840f9e5913304eb448d224b67eb966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed17354f86ae1ff20c86939da4b78c2a"><td class="memTemplParams" colspan="2">template&lt;typename NodeRefStorageType , detail::enable_if_t&lt; detail::is_node_ref_storage&lt; NodeRefStorageType &gt;::value, int &gt;  = 0&gt; </td></tr>
@@ -214,7 +213,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b185dafbee0295d5f85ab467c5d244b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a7b185dafbee0295d5f85ab467c5d244b">operator&gt;=</a> (const <a class="el" href="classbasic__node.html">basic_node</a> &amp;rhs) const noexcept</td></tr>
 <tr class="memdesc:a7b185dafbee0295d5f85ab467c5d244b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A greater-than-or-equal-to operator of the <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> class.  <a href="classbasic__node.html#a7b185dafbee0295d5f85ab467c5d244b">More...</a><br /></td></tr>
 <tr class="separator:a7b185dafbee0295d5f85ab467c5d244b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb03e29e72a87f662a8e2de0591680e"><td class="memItemLeft" align="right" valign="top">node_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#acbb03e29e72a87f662a8e2de0591680e">get_type</a> () const noexcept</td></tr>
+<tr class="memitem:acbb03e29e72a87f662a8e2de0591680e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="node_8hpp.html#a881d85c4d69a945b007a50acdff3a238">node_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#acbb03e29e72a87f662a8e2de0591680e">get_type</a> () const noexcept</td></tr>
 <tr class="memdesc:acbb03e29e72a87f662a8e2de0591680e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the current <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> value.  <a href="classbasic__node.html#acbb03e29e72a87f662a8e2de0591680e">More...</a><br /></td></tr>
 <tr class="separator:acbb03e29e72a87f662a8e2de0591680e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a345ecaef9f9e42d1278a0cc3fd8ea295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__node.html#a728ccc95c647ee252b3100c2b4ad2da8">node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a345ecaef9f9e42d1278a0cc3fd8ea295">type</a> () const noexcept</td></tr>
@@ -280,10 +279,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a620271408d6ef1d2bbb945f723b90084"><td class="memTemplItemLeft" align="right" valign="top">const <a class="el" href="classbasic__node.html">basic_node</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a620271408d6ef1d2bbb945f723b90084">at</a> (KeyType &amp;&amp;key) const</td></tr>
 <tr class="memdesc:a620271408d6ef1d2bbb945f723b90084"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object with a <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> key object.  <a href="classbasic__node.html#a620271408d6ef1d2bbb945f723b90084">More...</a><br /></td></tr>
 <tr class="separator:a620271408d6ef1d2bbb945f723b90084"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c7fa23949e45af4df6e23fbf8ed2e67"><td class="memItemLeft" align="right" valign="top">yaml_version_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a3c7fa23949e45af4df6e23fbf8ed2e67">get_yaml_version_type</a> () const noexcept</td></tr>
+<tr class="memitem:a3c7fa23949e45af4df6e23fbf8ed2e67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="node_8hpp.html#a3bda996ce6a4874f26ec3e41b9bbed12">yaml_version_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a3c7fa23949e45af4df6e23fbf8ed2e67">get_yaml_version_type</a> () const noexcept</td></tr>
 <tr class="memdesc:a3c7fa23949e45af4df6e23fbf8ed2e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the YAML version for this <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object.  <a href="classbasic__node.html#a3c7fa23949e45af4df6e23fbf8ed2e67">More...</a><br /></td></tr>
 <tr class="separator:a3c7fa23949e45af4df6e23fbf8ed2e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26ccf6485140763bc1dba97ee8614d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a26ccf6485140763bc1dba97ee8614d3d">set_yaml_version_type</a> (const yaml_version_type version) noexcept</td></tr>
+<tr class="memitem:a26ccf6485140763bc1dba97ee8614d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a26ccf6485140763bc1dba97ee8614d3d">set_yaml_version_type</a> (const <a class="el" href="node_8hpp.html#a3bda996ce6a4874f26ec3e41b9bbed12">yaml_version_type</a> version) noexcept</td></tr>
 <tr class="memdesc:a26ccf6485140763bc1dba97ee8614d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the YAML version for this <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object.  <a href="classbasic__node.html#a26ccf6485140763bc1dba97ee8614d3d">More...</a><br /></td></tr>
 <tr class="separator:a26ccf6485140763bc1dba97ee8614d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d3d911d0cb5f145c22d73fa408eb81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbasic__node.html#a6e46cd515f692ce2f1b5732f9c9ff81a">yaml_version_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a17d3d911d0cb5f145c22d73fa408eb81">get_yaml_version</a> () const noexcept</td></tr>
@@ -322,7 +321,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a959f644d6df4dc1c511c2a70d300873d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb64634acd5e8814bd4aea10855a731"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1bb64634acd5e8814bd4aea10855a731"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a1bb64634acd5e8814bd4aea10855a731">get_value_inplace</a> (T &amp;value_ref) const noexcept(noexcept(std::declval&lt; const <a class="el" href="classbasic__node.html">basic_node</a> &amp; &gt;().template get_value_impl&lt; T &gt;(std::declval&lt; T &amp; &gt;())))</td></tr>
-<tr class="memdesc:a1bb64634acd5e8814bd4aea10855a731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the node value object converted into a given type. The conversion result is filled into <code>value_ref</code>.  <a href="classbasic__node.html#a1bb64634acd5e8814bd4aea10855a731">More...</a><br /></td></tr>
+<tr class="memdesc:a1bb64634acd5e8814bd4aea10855a731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the node value object converted into a given type.  <a href="classbasic__node.html#a1bb64634acd5e8814bd4aea10855a731">More...</a><br /></td></tr>
 <tr class="separator:a1bb64634acd5e8814bd4aea10855a731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a388e7bc85630a0838e6af87ed0211d92"><td class="memTemplParams" colspan="2">template&lt;typename ReferenceType , detail::enable_if_t&lt; std::is_reference&lt; ReferenceType &gt;::value, int &gt;  = 0&gt; </td></tr>
 <tr class="memitem:a388e7bc85630a0838e6af87ed0211d92"><td class="memTemplItemLeft" align="right" valign="top">ReferenceType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a388e7bc85630a0838e6af87ed0211d92">get_value_ref</a> ()</td></tr>
@@ -390,7 +389,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9409e4382429904bcff4d8b030c6b6b"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classbasic__node.html">basic_node</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#ab9409e4382429904bcff4d8b030c6b6b">deserialize_docs</a> (ItrType &amp;&amp;<a class="el" href="classbasic__node.html#ad4d5b87a733179480e171bea2eba9b77">begin</a>, ItrType &amp;&amp;<a class="el" href="classbasic__node.html#a955959def20fa660b074a625d9537123">end</a>)</td></tr>
 <tr class="memdesc:ab9409e4382429904bcff4d8b030c6b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize all YAML documents in the input ranged by the iterators into <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> objects.  <a href="classbasic__node.html#ab9409e4382429904bcff4d8b030c6b6b">More...</a><br /></td></tr>
 <tr class="separator:ab9409e4382429904bcff4d8b030c6b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367ab1d3fba518f3aac1e47ca4eb1a2e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a367ab1d3fba518f3aac1e47ca4eb1a2e">serialize</a> (const <a class="el" href="classbasic__node.html">basic_node</a> &amp;<a class="el" href="classbasic__node.html">node</a>)</td></tr>
+<tr class="memitem:a367ab1d3fba518f3aac1e47ca4eb1a2e"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a367ab1d3fba518f3aac1e47ca4eb1a2e">serialize</a> (const <a class="el" href="classbasic__node.html">basic_node</a> &amp;<a class="el" href="fkyaml__fwd_8hpp.html#a537684263bad4bb413d1fd068cd09609">node</a>)</td></tr>
 <tr class="memdesc:a367ab1d3fba518f3aac1e47ca4eb1a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object into a string.  <a href="classbasic__node.html#a367ab1d3fba518f3aac1e47ca4eb1a2e">More...</a><br /></td></tr>
 <tr class="separator:a367ab1d3fba518f3aac1e47ca4eb1a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc299e85c044f96773ad2eeedb133b33"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbasic__node.html#acc299e85c044f96773ad2eeedb133b33">serialize_docs</a> (const std::vector&lt; <a class="el" href="classbasic__node.html">basic_node</a> &gt; &amp;docs)</td></tr>
@@ -420,17 +419,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ac51f4210243c4e547b579925e9d75212"><td class="memTemplParams" colspan="2"><a id="ac51f4210243c4e547b579925e9d75212"></a>
-template&lt;node_type &gt; </td></tr>
-<tr class="memitem:ac51f4210243c4e547b579925e9d75212"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fkyaml::detail::external_node_constructor</b></td></tr>
+<tr class="memitem:ac51f4210243c4e547b579925e9d75212"><td class="memTemplParams" colspan="2">template&lt;node_type &gt; </td></tr>
+<tr class="memitem:ac51f4210243c4e547b579925e9d75212"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#ac51f4210243c4e547b579925e9d75212">fkyaml::detail::external_node_constructor</a></td></tr>
 <tr class="separator:ac51f4210243c4e547b579925e9d75212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ed9b02aaf581eba61c149474504abec"><td class="memTemplParams" colspan="2"><a id="a0ed9b02aaf581eba61c149474504abec"></a>
-template&lt;typename BasicNodeType &gt; </td></tr>
-<tr class="memitem:a0ed9b02aaf581eba61c149474504abec"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fkyaml::detail::basic_deserializer</b></td></tr>
+<tr class="memitem:a0ed9b02aaf581eba61c149474504abec"><td class="memTemplParams" colspan="2">template&lt;typename BasicNodeType &gt; </td></tr>
+<tr class="memitem:a0ed9b02aaf581eba61c149474504abec"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a0ed9b02aaf581eba61c149474504abec">fkyaml::detail::basic_deserializer</a></td></tr>
 <tr class="separator:a0ed9b02aaf581eba61c149474504abec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2537683d206da37e3020189529b076c7"><td class="memTemplParams" colspan="2"><a id="a2537683d206da37e3020189529b076c7"></a>
-template&lt;typename BasicNodeType &gt; </td></tr>
-<tr class="memitem:a2537683d206da37e3020189529b076c7"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fkyaml::detail::basic_serializer</b></td></tr>
+<tr class="memitem:a2537683d206da37e3020189529b076c7"><td class="memTemplParams" colspan="2">template&lt;typename BasicNodeType &gt; </td></tr>
+<tr class="memitem:a2537683d206da37e3020189529b076c7"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__node.html#a2537683d206da37e3020189529b076c7">fkyaml::detail::basic_serializer</a></td></tr>
 <tr class="separator:a2537683d206da37e3020189529b076c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -827,7 +823,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5c8f1c51f60f86813b53d322798c2f7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c8f1c51f60f86813b53d322798c2f7c">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c8f1c51f60f86813b53d322798c2f7c">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -857,7 +853,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 </div>
 </div>
 <a id="a7278d19b4375b63ac4c0d050ca7c634e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7278d19b4375b63ac4c0d050ca7c634e">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7278d19b4375b63ac4c0d050ca7c634e">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,8 +889,36 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 
 </div>
 </div>
+<a id="a66bb51306ed961a0aa8aabfaf0e273d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66bb51306ed961a0aa8aabfaf0e273d1">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename... &gt; class SequenceType, template&lt; typename, typename, typename... &gt; class MappingType, typename BooleanType , typename IntegerType , typename FloatNumberType , typename StringType , template&lt; typename, typename=void &gt; class ConverterType&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::<a class="el" href="classbasic__node.html">basic_node</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="node_8hpp.html#a881d85c4d69a945b007a50acdff3a238">node_type</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae5f611b4b4ca3ea1fd45c9006917ddd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5f611b4b4ca3ea1fd45c9006917ddd0">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f611b4b4ca3ea1fd45c9006917ddd0">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -931,7 +955,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 </div>
 </div>
 <a id="af27ce2f6f47ea4b143646fad96cde1dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af27ce2f6f47ea4b143646fad96cde1dc">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af27ce2f6f47ea4b143646fad96cde1dc">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -968,7 +992,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 </div>
 </div>
 <a id="a63840f9e5913304eb448d224b67eb966"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63840f9e5913304eb448d224b67eb966">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a63840f9e5913304eb448d224b67eb966">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1014,7 +1038,7 @@ template&lt;typename CompatibleType , typename U  = detail::remove_cvref_t&lt;Co
 </div>
 </div>
 <a id="aed17354f86ae1ff20c86939da4b78c2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed17354f86ae1ff20c86939da4b78c2a">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed17354f86ae1ff20c86939da4b78c2a">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1059,7 +1083,7 @@ template&lt;typename NodeRefStorageType , detail::enable_if_t&lt; detail::is_nod
 </div>
 </div>
 <a id="a706d443e7278ba9edfb6ae5bb54877dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a706d443e7278ba9edfb6ae5bb54877dd">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a706d443e7278ba9edfb6ae5bb54877dd">&#9670;&nbsp;</a></span>basic_node() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2202,7 +2226,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">node_type <a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::get_type </td>
+          <td class="memname"><a class="el" href="node_8hpp.html#a881d85c4d69a945b007a50acdff3a238">node_type</a> <a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::get_type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2290,8 +2314,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Get the node value object converted into a given type. The conversion result is filled into <code>value_ref</code>. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Get the node value object converted into a given type. </p>
+<p>The conversion result is filled into <code>value_ref</code>. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>A compatible value type. </td></tr>
   </table>
@@ -2412,7 +2436,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 
 <p>Get the YAML version for this <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object. </p>
 <dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated:</a></b></dt><dd>Use <a class="el" href="classbasic__node.html#a3c7fa23949e45af4df6e23fbf8ed2e67" title="Get the YAML version for this basic_node object.">get_yaml_version_type()</a> function. (since 0.3.12) </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>The YAML version if already set, <code>yaml_version_t::VER_1_2</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The YAML version if already set, <code><a class="el" href="node_8hpp.html#a0a4dc98d9921c270f750a2a1a16db7f1a11400a1295bbbfcbe91a1380b7d2d576" title="YAML version 1.2.">yaml_version_t::VER_1_2</a></code> otherwise. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://fktn-k.github.io/fkYAML/api/basic_node/get_yaml_version/">https://fktn-k.github.io/fkYAML/api/basic_node/get_yaml_version/</a> </dd></dl>
 
 </div>
@@ -2429,7 +2453,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">yaml_version_type <a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::get_yaml_version_type </td>
+          <td class="memname"><a class="el" href="node_8hpp.html#a3bda996ce6a4874f26ec3e41b9bbed12">yaml_version_type</a> <a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::get_yaml_version_type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2443,7 +2467,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 </div><div class="memdoc">
 
 <p>Get the YAML version for this <a class="el" href="classbasic__node.html" title="A class to store value of YAML nodes.">basic_node</a> object. </p>
-<dl class="section return"><dt>Returns</dt><dd>The YAML version if already set, <code>yaml_version_type::VERSION_1_2</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The YAML version if already set, <code><a class="el" href="node_8hpp.html#a3bda996ce6a4874f26ec3e41b9bbed12a5e2745357f1c8b7db5eb87d3c4fa8276" title="YAML version 1.2.">yaml_version_type::VERSION_1_2</a></code> otherwise. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://fktn-k.github.io/fkYAML/api/basic_node/get_yaml_version_type/">https://fktn-k.github.io/fkYAML/api/basic_node/get_yaml_version_type/</a> </dd></dl>
 
 </div>
@@ -3798,7 +3822,7 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
         <tr>
           <td class="memname">void <a class="el" href="classbasic__node.html">basic_node</a>&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt;::set_yaml_version_type </td>
           <td>(</td>
-          <td class="paramtype">const yaml_version_type&#160;</td>
+          <td class="paramtype">const <a class="el" href="node_8hpp.html#a3bda996ce6a4874f26ec3e41b9bbed12">yaml_version_type</a>&#160;</td>
           <td class="paramname"><em>version</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3921,9 +3945,88 @@ template&lt;template&lt; typename, typename... &gt; class SequenceType, template
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a0ed9b02aaf581eba61c149474504abec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ed9b02aaf581eba61c149474504abec">&#9670;&nbsp;</a></span>fkyaml::detail::basic_deserializer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename... &gt; class SequenceType, template&lt; typename, typename, typename... &gt; class MappingType, typename BooleanType , typename IntegerType , typename FloatNumberType , typename StringType , template&lt; typename, typename=void &gt; class ConverterType&gt; </div>
+<div class="memtemplate">
+template&lt;typename BasicNodeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class fkyaml::detail::basic_deserializer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2537683d206da37e3020189529b076c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2537683d206da37e3020189529b076c7">&#9670;&nbsp;</a></span>fkyaml::detail::basic_serializer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename... &gt; class SequenceType, template&lt; typename, typename, typename... &gt; class MappingType, typename BooleanType , typename IntegerType , typename FloatNumberType , typename StringType , template&lt; typename, typename=void &gt; class ConverterType&gt; </div>
+<div class="memtemplate">
+template&lt;typename BasicNodeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class fkyaml::detail::basic_serializer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac51f4210243c4e547b579925e9d75212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51f4210243c4e547b579925e9d75212">&#9670;&nbsp;</a></span>fkyaml::detail::external_node_constructor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename, typename... &gt; class SequenceType, template&lt; typename, typename, typename... &gt; class MappingType, typename BooleanType , typename IntegerType , typename FloatNumberType , typename StringType , template&lt; typename, typename=void &gt; class ConverterType&gt; </div>
+<div class="memtemplate">
+template&lt;node_type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct fkyaml::detail::external_node_constructor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/PDFxTMDLib/external/fkYAML/<a class="el" href="fkyaml__fwd_8hpp_source.html">fkyaml_fwd.hpp</a></li>
-<li>include/PDFxTMDLib/external/fkYAML/<a class="el" href="node_8hpp_source.html">node.hpp</a></li>
+<li><a class="el" href="fkyaml__fwd_8hpp_source.html">fkyaml_fwd.hpp</a></li>
+<li><a class="el" href="node_8hpp_source.html">node.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

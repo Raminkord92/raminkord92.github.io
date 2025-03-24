@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/ITMD.h Source File</title>
+<title>PDFxTMDLib: ITMD.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,8 +70,8 @@ $(function() {
 <div class="title">ITMD.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/PartonUtils.h&quot;</span></div>
+<a href="ITMD_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PartonUtils_8h.html">PDFxTMDLib/Common/PartonUtils.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
@@ -80,20 +80,20 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TMDApproachT&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a>(TMDApproachT tmdApproach)</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : pimpl_(<span class="keyword">new</span> OwningModel&lt;TMDApproachT&gt;(std::move(tmdApproach)),</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                 [](<span class="keywordtype">void</span> *tmdfApproachBytes) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#abf01458b81d6bfaef7147c34ec128979">   26</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1ITMD.html#abf01458b81d6bfaef7147c34ec128979">ITMD</a>(TMDApproachT tmdApproach)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        : pimpl_(new OwningModel&lt;TMDApproachT&gt;(std::move(tmdApproach)),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                 [](void *tmdfApproachBytes) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                     <span class="keyword">using</span> Model = OwningModel&lt;TMDApproachT&gt;;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     <span class="keyword">auto</span> *<span class="keyword">const</span> model = <span class="keyword">static_cast&lt;</span>Model *<span class="keyword">&gt;</span>(tmdfApproachBytes);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                     <span class="keyword">delete</span> model;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                 }),</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          tmdOperation_([](<span class="keywordtype">void</span> *tmdfApproachBytes, PartonFlavor flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          tmdOperation_([](<span class="keywordtype">void</span> *tmdfApproachBytes, <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                           <span class="keywordtype">double</span> mu2) -&gt; <span class="keywordtype">double</span> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;              <span class="keyword">using</span> Model = OwningModel&lt;TMDApproachT&gt;;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              <span class="keyword">auto</span> *<span class="keyword">const</span> model = <span class="keyword">static_cast&lt;</span>Model *<span class="keyword">&gt;</span>(tmdfApproachBytes);</div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">   64</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">tmd</a>(PartonFlavor flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">   64</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">tmd</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> tmdOperation_(pimpl_.get(), flavor, x, kt2, mu2);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
@@ -131,17 +131,17 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">  105</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;<a class="code" href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">operator=</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> <span class="keyword">const</span> &amp;other)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">using</span> std::swap;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">using</span> <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">std::swap</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> copy(other);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        swap(pimpl_, copy.pimpl_);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        swap(clone_, copy.clone_);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        swap(tmdOperation_, copy.tmdOperation_);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(pimpl_, copy.pimpl_);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(clone_, copy.clone_);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(tmdOperation_, copy.tmdOperation_);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;&amp;other) noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    ~<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;<a class="code" href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">operator=</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;&amp;other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#abea59d7dc54965d46bf9eb1099827e83">  115</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html#abea59d7dc54965d46bf9eb1099827e83">ITMD</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;&amp;other) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#a3b73877d34d31a02da4b6c068e46c79e">  116</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html#a3b73877d34d31a02da4b6c068e46c79e">~ITMD</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#af8c2cffaef0c5e63fc992ada7fd0c53b">  117</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;<a class="code" href="classPDFxTMD_1_1ITMD.html#af8c2cffaef0c5e63fc992ada7fd0c53b">operator=</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;&amp;other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> TMDApproachT&gt; <span class="keyword">struct </span>OwningModel</div>
@@ -149,7 +149,7 @@ $(function() {
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        OwningModel(TMDApproachT tmdApproach) : m_tmdApproach(std::move(tmdApproach))</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">tmd</a>(PartonFlavor flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">tmd</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2)</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">return</span> m_tmdApproach.tmd(flavor, x, kt2, mu2);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">using</span> DestroyOperation = void(<span class="keywordtype">void</span> *);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">using</span> CloneOperation = <span class="keywordtype">void</span> *(<span class="keywordtype">void</span> *);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">using</span> TMDOperation = double(<span class="keywordtype">void</span> *, PartonFlavor, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">using</span> TMDOperation = double(<span class="keywordtype">void</span> *, <a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keyword">using</span> TMDOperation1 = void(<span class="keywordtype">void</span> *, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, std::array&lt;double, DEFAULT_TOTAL_PDFS&gt;&amp; output);</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::unique_ptr&lt;void, DestroyOperation *&gt; pimpl_;</div>
@@ -171,11 +171,19 @@ $(function() {
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    TMDOperation1 *tmdOperation1_{<span class="keyword">nullptr</span>};</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aPartonUtils_8h_html"><div class="ttname"><a href="PartonUtils_8h.html">PartonUtils.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html">PDFxTMD::ITMD</a></div><div class="ttdoc">Interface for Transverse Momentum Dependent (TMD) parton distribution functions.</div><div class="ttdef"><b>Definition:</b> ITMD.h:23</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_a01cf288918339c9601249831eb9f7f8a"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#a01cf288918339c9601249831eb9f7f8a">PDFxTMD::ITMD::tmd</a></div><div class="ttdeci">void tmd(double x, double kt2, double mu2, std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;output)</div><div class="ttdoc">Evaluate the TMD PDF for all flavors.</div><div class="ttdef"><b>Definition:</b> ITMD.h:79</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_a3b73877d34d31a02da4b6c068e46c79e"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#a3b73877d34d31a02da4b6c068e46c79e">PDFxTMD::ITMD::~ITMD</a></div><div class="ttdeci">~ITMD()=default</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_a54cfcc565c4e048b9e47dde453193ac7"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">PDFxTMD::ITMD::operator=</a></div><div class="ttdeci">ITMD &amp; operator=(ITMD const &amp;other)</div><div class="ttdoc">Assignment operator for ITMD objects.</div><div class="ttdef"><b>Definition:</b> ITMD.h:105</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_a5546dff995da21b5d2c38ed219f58952"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#a5546dff995da21b5d2c38ed219f58952">PDFxTMD::ITMD::ITMD</a></div><div class="ttdeci">ITMD(const ITMD &amp;other)</div><div class="ttdoc">Copy constructor for ITMD objects.</div><div class="ttdef"><b>Definition:</b> ITMD.h:91</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_abea59d7dc54965d46bf9eb1099827e83"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#abea59d7dc54965d46bf9eb1099827e83">PDFxTMD::ITMD::ITMD</a></div><div class="ttdeci">ITMD(ITMD &amp;&amp;other) noexcept=default</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_abf01458b81d6bfaef7147c34ec128979"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#abf01458b81d6bfaef7147c34ec128979">PDFxTMD::ITMD::ITMD</a></div><div class="ttdeci">ITMD(TMDApproachT tmdApproach)</div><div class="ttdef"><b>Definition:</b> ITMD.h:26</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_af8c2cffaef0c5e63fc992ada7fd0c53b"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#af8c2cffaef0c5e63fc992ada7fd0c53b">PDFxTMD::ITMD::operator=</a></div><div class="ttdeci">ITMD &amp; operator=(ITMD &amp;&amp;other)=default</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_af9808c6c648cb8681e7a9903c91a071a"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">PDFxTMD::ITMD::tmd</a></div><div class="ttdeci">double tmd(PartonFlavor flavor, double x, double kt2, double mu2) const</div><div class="ttdoc">Evaluate the TMD PDF for a specific flavor.</div><div class="ttdef"><b>Definition:</b> ITMD.h:64</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bf"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PDFxTMD::PartonFlavor</a></div><div class="ttdeci">PartonFlavor</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:51</div></div>
+<div class="ttc" id="anode_8hpp_html_aec92720797c84629d71585fb7fcc5bce"><div class="ttname"><a href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a></div><div class="ttdeci">void swap(basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;lhs, basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs)))</div><div class="ttdoc">Swap function for basic_node objects.</div><div class="ttdef"><b>Definition:</b> node.hpp:15679</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Common/NumParser.h Source File</title>
+<title>PDFxTMDLib: NumParser.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,36 +70,36 @@ $(function() {
 <div class="title">NumParser.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="NumParser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;charconv&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1NumParser.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1NumParser.html">NumParser</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1NumParser.html">NumParser</a>(std::string_view input) noexcept</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1NumParser.html#a969f943c8531701db17b3839b32c9046">   12</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1NumParser.html#a969f943c8531701db17b3839b32c9046">NumParser</a>(std::string_view input) noexcept</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        : _current(input.data()), _end(input.data() + input.size())</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> reset(std::string_view input) noexcept</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1NumParser.html#a8d164d362ce76e0c6acc2f1088b8b68a">   17</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1NumParser.html#a8d164d362ce76e0c6acc2f1088b8b68a">reset</a>(std::string_view input) noexcept</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        _current = input.data();</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        _end = input.data() + input.size();</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <a class="code" href="classPDFxTMD_1_1NumParser.html">NumParser</a> &amp;operator&gt;&gt;(T &amp;value) noexcept</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1NumParser.html#a8f774de400d4372f2aa30f4afe78df0a">   23</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <a class="code" href="classPDFxTMD_1_1NumParser.html">NumParser</a> &amp;<a class="code" href="classPDFxTMD_1_1NumParser.html#a8f774de400d4372f2aa30f4afe78df0a">operator&gt;&gt;</a>(T &amp;<a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>) noexcept</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        skipSpaces();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        value = parseNumber&lt;T&gt;();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a> = parseNumber&lt;T&gt;();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    [[nodiscard]] <span class="keywordtype">bool</span> hasMore() <span class="keyword">const</span> noexcept</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1NumParser.html#a6405a36dc47f456785e4b53bd0ef0fce">   30</a></span>&#160;    [[nodiscard]] <span class="keywordtype">bool</span> <a class="code" href="classPDFxTMD_1_1NumParser.html#a6405a36dc47f456785e4b53bd0ef0fce">hasMore</a>() const noexcept</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">return</span> _current &lt; _end;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
@@ -118,19 +118,25 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T parseNumber() noexcept</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        T value;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> [ptr, ec] = std::from_chars(_current, _end, value);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        T <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> [ptr, ec] = std::from_chars(_current, _end, <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (ec == std::errc::invalid_argument || ec == std::errc::result_out_of_range)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            value = T{};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a> = T{};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        _current = ptr;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">value</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
 <div class="ttc" id="aclassPDFxTMD_1_1NumParser_html"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html">PDFxTMD::NumParser</a></div><div class="ttdef"><b>Definition:</b> NumParser.h:10</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1NumParser_html_a6405a36dc47f456785e4b53bd0ef0fce"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html#a6405a36dc47f456785e4b53bd0ef0fce">PDFxTMD::NumParser::hasMore</a></div><div class="ttdeci">bool hasMore() const noexcept</div><div class="ttdef"><b>Definition:</b> NumParser.h:30</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1NumParser_html_a8d164d362ce76e0c6acc2f1088b8b68a"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html#a8d164d362ce76e0c6acc2f1088b8b68a">PDFxTMD::NumParser::reset</a></div><div class="ttdeci">void reset(std::string_view input) noexcept</div><div class="ttdef"><b>Definition:</b> NumParser.h:17</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1NumParser_html_a8f774de400d4372f2aa30f4afe78df0a"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html#a8f774de400d4372f2aa30f4afe78df0a">PDFxTMD::NumParser::operator&gt;&gt;</a></div><div class="ttdeci">NumParser &amp; operator&gt;&gt;(T &amp;value) noexcept</div><div class="ttdef"><b>Definition:</b> NumParser.h:23</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1NumParser_html_a969f943c8531701db17b3839b32c9046"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html#a969f943c8531701db17b3839b32c9046">PDFxTMD::NumParser::NumParser</a></div><div class="ttdeci">NumParser(std::string_view input) noexcept</div><div class="ttdef"><b>Definition:</b> NumParser.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacenode__attr__mask_html_a28e7d5eedccb11d99bb66e3f30d159d1"><div class="ttname"><a href="namespacenode__attr__mask.html#a28e7d5eedccb11d99bb66e3f30d159d1">node_attr_mask::value</a></div><div class="ttdeci">constexpr node_attr_t value</div><div class="ttdoc">The bit mask for node value type bits.</div><div class="ttdef"><b>Definition:</b> node.hpp:7674</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

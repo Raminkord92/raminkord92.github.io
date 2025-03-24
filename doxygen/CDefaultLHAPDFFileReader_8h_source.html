@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Implementation/Reader/Collinear/CDefaultLHAPDFFileReader.h Source File</title>
+<title>PDFxTMDLib: CDefaultLHAPDFFileReader.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,21 +70,21 @@ $(function() {
 <div class="title">CDefaultLHAPDFFileReader.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/AllFlavorsShape.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/NumParser.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/IReader.h&quot;</span></div>
+<a href="CDefaultLHAPDFFileReader_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AllFlavorsShape_8h.html">PDFxTMDLib/Common/AllFlavorsShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="NumParser_8h.html">PDFxTMDLib/Common/NumParser.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IReader_8h.html">PDFxTMDLib/Interface/IReader.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">CDefaultLHAPDFFileReader</a> : <span class="keyword">public</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader</a>&lt;CDefaultLHAPDFFileReader&gt;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> read(<span class="keyword">const</span> std::string &amp;pdfName, <span class="keywordtype">int</span> setNumber);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="structPDFxTMD_1_1DefaultAllFlavorShape.html">DefaultAllFlavorShape</a> getData() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    std::vector&lt;double&gt; getValues(PhaseSpaceComponent comp) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::pair&lt;double, double&gt; getBoundaryValues(PhaseSpaceComponent comp) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#ac225943ea0ab6daed239888362afc4b5">   12</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#ac225943ea0ab6daed239888362afc4b5">read</a>(<span class="keyword">const</span> std::string &amp;pdfName, <span class="keywordtype">int</span> setNumber);</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a5e6f3ec2bf6515843060f977113e19c3">   13</a></span>&#160;    <a class="code" href="structPDFxTMD_1_1DefaultAllFlavorShape.html">DefaultAllFlavorShape</a> <a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a5e6f3ec2bf6515843060f977113e19c3">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a2e290a1ba9bc7390ed0b52ae328658ad">   14</a></span>&#160;    std::vector&lt;double&gt; <a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a2e290a1ba9bc7390ed0b52ae328658ad">getValues</a>(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82c">PhaseSpaceComponent</a> comp) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a1453b12814e039a5a92aacc4368d5aa1">   15</a></span>&#160;    std::pair&lt;double, double&gt; <a class="code" href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a1453b12814e039a5a92aacc4368d5aa1">getBoundaryValues</a>(<a class="code" href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82c">PhaseSpaceComponent</a> comp) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::vector&lt;DefaultAllFlavorShape&gt; m_pdfShape;</div>
@@ -102,9 +102,18 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> readValues(<a class="code" href="classPDFxTMD_1_1NumParser.html">NumParser</a> &amp;parser, <a class="code" href="structPDFxTMD_1_1DefaultAllFlavorShape.html">DefaultAllFlavorShape</a> &amp;data);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aAllFlavorsShape_8h_html"><div class="ttname"><a href="AllFlavorsShape_8h.html">AllFlavorsShape.h</a></div></div>
+<div class="ttc" id="aIReader_8h_html"><div class="ttname"><a href="IReader_8h.html">IReader.h</a></div></div>
+<div class="ttc" id="aNumParser_8h_html"><div class="ttname"><a href="NumParser_8h.html">NumParser.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html">PDFxTMD::CDefaultLHAPDFFileReader</a></div><div class="ttdef"><b>Definition:</b> CDefaultLHAPDFFileReader.h:10</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html_a1453b12814e039a5a92aacc4368d5aa1"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a1453b12814e039a5a92aacc4368d5aa1">PDFxTMD::CDefaultLHAPDFFileReader::getBoundaryValues</a></div><div class="ttdeci">std::pair&lt; double, double &gt; getBoundaryValues(PhaseSpaceComponent comp) const</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html_a2e290a1ba9bc7390ed0b52ae328658ad"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a2e290a1ba9bc7390ed0b52ae328658ad">PDFxTMD::CDefaultLHAPDFFileReader::getValues</a></div><div class="ttdeci">std::vector&lt; double &gt; getValues(PhaseSpaceComponent comp) const</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html_a5e6f3ec2bf6515843060f977113e19c3"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#a5e6f3ec2bf6515843060f977113e19c3">PDFxTMD::CDefaultLHAPDFFileReader::getData</a></div><div class="ttdeci">DefaultAllFlavorShape getData() const</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CDefaultLHAPDFFileReader_html_ac225943ea0ab6daed239888362afc4b5"><div class="ttname"><a href="classPDFxTMD_1_1CDefaultLHAPDFFileReader.html#ac225943ea0ab6daed239888362afc4b5">PDFxTMD::CDefaultLHAPDFFileReader::read</a></div><div class="ttdeci">void read(const std::string &amp;pdfName, int setNumber)</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IReader_html"><div class="ttname"><a href="classPDFxTMD_1_1IReader.html">PDFxTMD::IReader</a></div><div class="ttdef"><b>Definition:</b> IReader.h:11</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1NumParser_html"><div class="ttname"><a href="classPDFxTMD_1_1NumParser.html">PDFxTMD::NumParser</a></div><div class="ttdef"><b>Definition:</b> NumParser.h:10</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a77f152f98435b980a4645114a53af82c"><div class="ttname"><a href="namespacePDFxTMD.html#a77f152f98435b980a4645114a53af82c">PDFxTMD::PhaseSpaceComponent</a></div><div class="ttdeci">PhaseSpaceComponent</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:29</div></div>
 <div class="ttc" id="astructPDFxTMD_1_1DefaultAllFlavorShape_html"><div class="ttname"><a href="structPDFxTMD_1_1DefaultAllFlavorShape.html">PDFxTMD::DefaultAllFlavorShape</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

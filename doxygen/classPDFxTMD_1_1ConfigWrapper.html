@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>PDFxTMD</b></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html">ConfigWrapper</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacePDFxTMD.html">PDFxTMD</a></li><li class="navelem"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html">ConfigWrapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,38 +75,278 @@ $(function() {
 <div class="title">PDFxTMD::ConfigWrapper Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="ConfigWrapper_8h_source.html">ConfigWrapper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aace1109f92e5dfb9f612110b2540a6e1"><td class="memItemLeft" align="right" valign="top"><a id="aace1109f92e5dfb9f612110b2540a6e1"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Format</b> { <b>YAML</b>
+<tr class="memitem:aace1109f92e5dfb9f612110b2540a6e1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> { <a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc">YAML</a>
  }</td></tr>
 <tr class="separator:aace1109f92e5dfb9f612110b2540a6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae10009a6ccc1d4e55532bac228d75e40"><td class="memItemLeft" align="right" valign="top"><a id="ae10009a6ccc1d4e55532bac228d75e40"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromFile</b> (const std::filesystem::path &amp;filepath, Format format)</td></tr>
+<tr class="memitem:a240af9ce1e3be3decfd06b31b884f80c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#a240af9ce1e3be3decfd06b31b884f80c">ConfigWrapper</a> ()</td></tr>
+<tr class="separator:a240af9ce1e3be3decfd06b31b884f80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10009a6ccc1d4e55532bac228d75e40"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#ae10009a6ccc1d4e55532bac228d75e40">loadFromFile</a> (const std::filesystem::path &amp;filepath, <a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> <a class="el" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>)</td></tr>
 <tr class="separator:ae10009a6ccc1d4e55532bac228d75e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e8462340d5be9c89c53d2002c92e1c"><td class="memItemLeft" align="right" valign="top"><a id="aa3e8462340d5be9c89c53d2002c92e1c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromString</b> (const std::string &amp;data_string, Format format)</td></tr>
+<tr class="memitem:aa3e8462340d5be9c89c53d2002c92e1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aa3e8462340d5be9c89c53d2002c92e1c">loadFromString</a> (const std::string &amp;data_string, <a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a> <a class="el" href="node_8hpp.html#a080bd0fe1a31859ecfd4d6fe93424385">format</a>)</td></tr>
 <tr class="separator:aa3e8462340d5be9c89c53d2002c92e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ade5350beb59626f80f0d1a204ab1ae"><td class="memTemplParams" colspan="2"><a id="a9ade5350beb59626f80f0d1a204ab1ae"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9ade5350beb59626f80f0d1a204ab1ae"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::optional&lt; T &gt;, ErrorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> (const std::string &amp;key) const</td></tr>
+<tr class="memitem:a9ade5350beb59626f80f0d1a204ab1ae"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9ade5350beb59626f80f0d1a204ab1ae"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::optional&lt; T &gt;, <a class="el" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19a">ErrorType</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#a9ade5350beb59626f80f0d1a204ab1ae">get</a> (const std::string &amp;key) const</td></tr>
 <tr class="separator:a9ade5350beb59626f80f0d1a204ab1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad19dafcd723f05e432c28faf25d41bb1"><td class="memTemplParams" colspan="2"><a id="ad19dafcd723f05e432c28faf25d41bb1"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad19dafcd723f05e432c28faf25d41bb1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set</b> (const std::string &amp;key, const T &amp;value)</td></tr>
+<tr class="memitem:ad19dafcd723f05e432c28faf25d41bb1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad19dafcd723f05e432c28faf25d41bb1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#ad19dafcd723f05e432c28faf25d41bb1">set</a> (const std::string &amp;key, const T &amp;value)</td></tr>
 <tr class="separator:ad19dafcd723f05e432c28faf25d41bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eaf1b4f91176712b6ffaa9416b2c688"><td class="memItemLeft" align="right" valign="top"><a id="a3eaf1b4f91176712b6ffaa9416b2c688"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveToFile</b> (const std::string &amp;filename) const</td></tr>
+<tr class="memitem:a3eaf1b4f91176712b6ffaa9416b2c688"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#a3eaf1b4f91176712b6ffaa9416b2c688">saveToFile</a> (const std::string &amp;filename) const</td></tr>
 <tr class="separator:a3eaf1b4f91176712b6ffaa9416b2c688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367078cd125ed836d4716e2fda6d91d8"><td class="memItemLeft" align="right" valign="top"><a id="a367078cd125ed836d4716e2fda6d91d8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeEmptyYAML</b> ()</td></tr>
+<tr class="memitem:a367078cd125ed836d4716e2fda6d91d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#a367078cd125ed836d4716e2fda6d91d8">initializeEmptyYAML</a> ()</td></tr>
 <tr class="separator:a367078cd125ed836d4716e2fda6d91d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aace1109f92e5dfb9f612110b2540a6e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace1109f92e5dfb9f612110b2540a6e1">&#9670;&nbsp;</a></span>Format</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">PDFxTMD::ConfigWrapper::Format</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aace1109f92e5dfb9f612110b2540a6e1a9463f87bbed1fcdacfb8d40e185ca2bc"></a>YAML&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a240af9ce1e3be3decfd06b31b884f80c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a240af9ce1e3be3decfd06b31b884f80c">&#9670;&nbsp;</a></span>ConfigWrapper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PDFxTMD::ConfigWrapper::ConfigWrapper </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9ade5350beb59626f80f0d1a204ab1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ade5350beb59626f80f0d1a204ab1ae">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;std::optional&lt;T&gt;, <a class="el" href="namespacePDFxTMD.html#a1f89fd5fba7e034f0d3f510685cad19a">ErrorType</a>&gt; PDFxTMD::ConfigWrapper::get </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a367078cd125ed836d4716e2fda6d91d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367078cd125ed836d4716e2fda6d91d8">&#9670;&nbsp;</a></span>initializeEmptyYAML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PDFxTMD::ConfigWrapper::initializeEmptyYAML </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae10009a6ccc1d4e55532bac228d75e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10009a6ccc1d4e55532bac228d75e40">&#9670;&nbsp;</a></span>loadFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDFxTMD::ConfigWrapper::loadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3e8462340d5be9c89c53d2002c92e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3e8462340d5be9c89c53d2002c92e1c">&#9670;&nbsp;</a></span>loadFromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDFxTMD::ConfigWrapper::loadFromString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data_string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classPDFxTMD_1_1ConfigWrapper.html#aace1109f92e5dfb9f612110b2540a6e1">Format</a>&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3eaf1b4f91176712b6ffaa9416b2c688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eaf1b4f91176712b6ffaa9416b2c688">&#9670;&nbsp;</a></span>saveToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDFxTMD::ConfigWrapper::saveToFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad19dafcd723f05e432c28faf25d41bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19dafcd723f05e432c28faf25d41bb1">&#9670;&nbsp;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PDFxTMD::ConfigWrapper::set </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/PDFxTMDLib/Common/<a class="el" href="ConfigWrapper_8h_source.html">ConfigWrapper.h</a></li>
+<li><a class="el" href="ConfigWrapper_8h_source.html">ConfigWrapper.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

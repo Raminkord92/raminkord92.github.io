@@ -1,0 +1,4 @@
+<map id="detect::has_begin_end&lt; T, void_t&lt; decltype(begin(std::declval&lt; T &gt;()), end(std::declval&lt; T &gt;()))&gt; &gt;" name="detect::has_begin_end&lt; T, void_t&lt; decltype(begin(std::declval&lt; T &gt;()), end(std::declval&lt; T &gt;()))&gt; &gt;">
+<area shape="rect" id="node1" title="Type traits to check if begin/end functions can be called on a T object." alt="" coords="5,80,173,165"/>
+<area shape="rect" id="node2" title=" " alt="" coords="33,5,145,32"/>
+</map>

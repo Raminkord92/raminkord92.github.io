@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Implementation/Interpolator/TMD/TTrilinearInterpolator.h Source File</title>
+<title>PDFxTMDLib: TTrilinearInterpolator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,27 +70,27 @@ $(function() {
 <div class="title">TTrilinearInterpolator.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<a href="TTrilinearInterpolator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/AllFlavorsShape.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Implementation/Reader/TMD/TDefaultAllFlavorReader.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/IInterpolator.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/IReader.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="AllFlavorsShape_8h.html">PDFxTMDLib/Common/AllFlavorsShape.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="TDefaultAllFlavorReader_8h.html">PDFxTMDLib/Implementation/Reader/TMD/TDefaultAllFlavorReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IInterpolator_8h.html">PDFxTMDLib/Interface/IInterpolator.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IReader_8h.html">PDFxTMDLib/Interface/IReader.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html">TTrilinearInterpolator</a></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classPDFxTMD_1_1ITMDInterpolator.html">ITMDInterpolator</a>&lt;TTrilinearInterpolator, TDefaultAllFlavorReader&gt;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html">TTrilinearInterpolator</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> initialize(<span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;TDefaultAllFlavorReader&gt;</a> *reader);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">double</span> interpolate(PartonFlavor flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> interpolate(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2, std::array&lt;double, DEFAULT_TOTAL_PDFS&gt;&amp; output) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;TDefaultAllFlavorReader&gt;</a> *getReader() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4e0c15a58dfb08414bd3408772c2bf8e">   17</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4e0c15a58dfb08414bd3408772c2bf8e">TTrilinearInterpolator</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a736b32c6e3eec34ee49926ddada8b055">   18</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a736b32c6e3eec34ee49926ddada8b055">initialize</a>(<span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;TDefaultAllFlavorReader&gt;</a> *reader);</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4fc051b86aa1dd249af1c8b70b067ffb">   19</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4fc051b86aa1dd249af1c8b70b067ffb">interpolate</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, <span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a6e984527f4a3870774ffeaf1b0405581">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html#a6e984527f4a3870774ffeaf1b0405581">interpolate</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> kt2, <span class="keywordtype">double</span> mu2, std::array&lt;double, DEFAULT_TOTAL_PDFS&gt;&amp; output) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1TTrilinearInterpolator.html#ae025bcfd916e960fb4d758432f9760af">   21</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;TDefaultAllFlavorReader&gt;</a> *<a class="code" href="classPDFxTMD_1_1TTrilinearInterpolator.html#ae025bcfd916e960fb4d758432f9760af">getReader</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;TDefaultAllFlavorReader&gt;</a> *m_reader;</div>
@@ -99,9 +99,20 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aAllFlavorsShape_8h_html"><div class="ttname"><a href="AllFlavorsShape_8h.html">AllFlavorsShape.h</a></div></div>
+<div class="ttc" id="aIInterpolator_8h_html"><div class="ttname"><a href="IInterpolator_8h.html">IInterpolator.h</a></div></div>
+<div class="ttc" id="aIReader_8h_html"><div class="ttname"><a href="IReader_8h.html">IReader.h</a></div></div>
+<div class="ttc" id="aTDefaultAllFlavorReader_8h_html"><div class="ttname"><a href="TDefaultAllFlavorReader_8h.html">TDefaultAllFlavorReader.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IReader_html"><div class="ttname"><a href="classPDFxTMD_1_1IReader.html">PDFxTMD::IReader&lt; TDefaultAllFlavorReader &gt;</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMDInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1ITMDInterpolator.html">PDFxTMD::ITMDInterpolator</a></div><div class="ttdef"><b>Definition:</b> IInterpolator.h:37</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html">PDFxTMD::TTrilinearInterpolator</a></div><div class="ttdef"><b>Definition:</b> TTrilinearInterpolator.h:15</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html_a4e0c15a58dfb08414bd3408772c2bf8e"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4e0c15a58dfb08414bd3408772c2bf8e">PDFxTMD::TTrilinearInterpolator::TTrilinearInterpolator</a></div><div class="ttdeci">TTrilinearInterpolator()=default</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html_a4fc051b86aa1dd249af1c8b70b067ffb"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html#a4fc051b86aa1dd249af1c8b70b067ffb">PDFxTMD::TTrilinearInterpolator::interpolate</a></div><div class="ttdeci">double interpolate(PartonFlavor flavor, double x, double kt2, double mu2) const</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html_a6e984527f4a3870774ffeaf1b0405581"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html#a6e984527f4a3870774ffeaf1b0405581">PDFxTMD::TTrilinearInterpolator::interpolate</a></div><div class="ttdeci">void interpolate(double x, double kt2, double mu2, std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;output) const</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html_a736b32c6e3eec34ee49926ddada8b055"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html#a736b32c6e3eec34ee49926ddada8b055">PDFxTMD::TTrilinearInterpolator::initialize</a></div><div class="ttdeci">void initialize(const IReader&lt; TDefaultAllFlavorReader &gt; *reader)</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1TTrilinearInterpolator_html_ae025bcfd916e960fb4d758432f9760af"><div class="ttname"><a href="classPDFxTMD_1_1TTrilinearInterpolator.html#ae025bcfd916e960fb4d758432f9760af">PDFxTMD::TTrilinearInterpolator::getReader</a></div><div class="ttdeci">const IReader&lt; TDefaultAllFlavorReader &gt; * getReader() const</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bf"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PDFxTMD::PartonFlavor</a></div><div class="ttdeci">PartonFlavor</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:51</div></div>
 <div class="ttc" id="astructPDFxTMD_1_1DefaultAllFlavorUPDFShape_html"><div class="ttname"><a href="structPDFxTMD_1_1DefaultAllFlavorUPDFShape.html">PDFxTMD::DefaultAllFlavorUPDFShape</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:80</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PDFxTMDLib: include/PDFxTMDLib/Interface/IInterpolator.h Source File</title>
+<title>PDFxTMDLib: IInterpolator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,33 +70,33 @@ $(function() {
 <div class="title">IInterpolator.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/InterfaceUtils.h&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Common/PartonUtils.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;PDFxTMDLib/Interface/IReader.h&quot;</span></div>
+<a href="IInterpolator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="InterfaceUtils_8h.html">PDFxTMDLib/Common/InterfaceUtils.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PartonUtils_8h.html">PDFxTMDLib/Common/PartonUtils.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="IReader_8h.html">PDFxTMDLib/Interface/IReader.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>PDFxTMD</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacePDFxTMD.html">PDFxTMD</a></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived, <span class="keyword">typename</span> Reader, <span class="keyword">typename</span>... InterpolateArgs&gt;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IInterpolator.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPDFxTMD_1_1IInterpolator.html">IInterpolator</a> : <span class="keyword">public</span> <a class="code" href="classPDFxTMD_1_1CRTPBase.html">CRTPBase</a>&lt;Derived&gt;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">void</span> initialize(<span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;Reader&gt;</a> *reader)</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IInterpolator.html#aedae310742f71183f96510b0c0141cc3">   12</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1IInterpolator.html#aedae310742f71183f96510b0c0141cc3">initialize</a>(<span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;Reader&gt;</a> *reader)</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        this-&gt;derived().initialize(reader);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        this-&gt;<a class="code" href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">derived</a>().initialize(reader);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">double</span> interpolate(PartonFlavor flavor, InterpolateArgs... args)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IInterpolator.html#a751e0bd0a378cd06912144f293435977">   17</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classPDFxTMD_1_1IInterpolator.html#a751e0bd0a378cd06912144f293435977">interpolate</a>(<a class="code" href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PartonFlavor</a> flavor, InterpolateArgs... args)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> this-&gt;derived().interpolate(flavor, args...);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">derived</a>().interpolate(flavor, args...);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> interpolate(InterpolateArgs... args, std::array&lt;double, DEFAULT_TOTAL_PDFS&gt;&amp; output)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IInterpolator.html#a63899d10ffe3e6ea3e9e51af7c7bf5bf">   21</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPDFxTMD_1_1IInterpolator.html#a63899d10ffe3e6ea3e9e51af7c7bf5bf">interpolate</a>(InterpolateArgs... args, std::array&lt;double, DEFAULT_TOTAL_PDFS&gt;&amp; output)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> this-&gt;derived().interpolate(args..., output);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">derived</a>().interpolate(args..., output);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;Reader&gt;</a> *getReader()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IInterpolator.html#aeda27ac562e96f9a294e5280a58a0322">   25</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classPDFxTMD_1_1IReader.html">IReader&lt;Reader&gt;</a> *<a class="code" href="classPDFxTMD_1_1IInterpolator.html#aeda27ac562e96f9a294e5280a58a0322">getReader</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> this-&gt;derived().getReader();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">return</span> this-&gt;<a class="code" href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">derived</a>().getReader();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Reader, <span class="keyword">typename</span> Derived&gt;</div>
@@ -109,11 +109,21 @@ $(function() {
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace PDFxTMD</span></div>
+<div class="ttc" id="aIReader_8h_html"><div class="ttname"><a href="IReader_8h.html">IReader.h</a></div></div>
+<div class="ttc" id="aInterfaceUtils_8h_html"><div class="ttname"><a href="InterfaceUtils_8h.html">InterfaceUtils.h</a></div></div>
+<div class="ttc" id="aPartonUtils_8h_html"><div class="ttname"><a href="PartonUtils_8h.html">PartonUtils.h</a></div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1CRTPBase_html"><div class="ttname"><a href="classPDFxTMD_1_1CRTPBase.html">PDFxTMD::CRTPBase</a></div><div class="ttdef"><b>Definition:</b> InterfaceUtils.h:11</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1CRTPBase_html_a52e5849f1a7d43adc39ea6de876ac4c1"><div class="ttname"><a href="classPDFxTMD_1_1CRTPBase.html#a52e5849f1a7d43adc39ea6de876ac4c1">PDFxTMD::CRTPBase::derived</a></div><div class="ttdeci">constexpr Derived &amp; derived() noexcept</div><div class="ttdef"><b>Definition:</b> InterfaceUtils.h:13</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1IInterpolator.html">PDFxTMD::IInterpolator</a></div><div class="ttdef"><b>Definition:</b> IInterpolator.h:10</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1IInterpolator_html_a63899d10ffe3e6ea3e9e51af7c7bf5bf"><div class="ttname"><a href="classPDFxTMD_1_1IInterpolator.html#a63899d10ffe3e6ea3e9e51af7c7bf5bf">PDFxTMD::IInterpolator::interpolate</a></div><div class="ttdeci">void interpolate(InterpolateArgs... args, std::array&lt; double, DEFAULT_TOTAL_PDFS &gt; &amp;output) const</div><div class="ttdef"><b>Definition:</b> IInterpolator.h:21</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1IInterpolator_html_a751e0bd0a378cd06912144f293435977"><div class="ttname"><a href="classPDFxTMD_1_1IInterpolator.html#a751e0bd0a378cd06912144f293435977">PDFxTMD::IInterpolator::interpolate</a></div><div class="ttdeci">double interpolate(PartonFlavor flavor, InterpolateArgs... args) const</div><div class="ttdef"><b>Definition:</b> IInterpolator.h:17</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1IInterpolator_html_aeda27ac562e96f9a294e5280a58a0322"><div class="ttname"><a href="classPDFxTMD_1_1IInterpolator.html#aeda27ac562e96f9a294e5280a58a0322">PDFxTMD::IInterpolator::getReader</a></div><div class="ttdeci">const IReader&lt; Reader &gt; * getReader() const</div><div class="ttdef"><b>Definition:</b> IInterpolator.h:25</div></div>
+<div class="ttc" id="aclassPDFxTMD_1_1IInterpolator_html_aedae310742f71183f96510b0c0141cc3"><div class="ttname"><a href="classPDFxTMD_1_1IInterpolator.html#aedae310742f71183f96510b0c0141cc3">PDFxTMD::IInterpolator::initialize</a></div><div class="ttdeci">void initialize(const IReader&lt; Reader &gt; *reader)</div><div class="ttdef"><b>Definition:</b> IInterpolator.h:12</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IReader_html"><div class="ttname"><a href="classPDFxTMD_1_1IReader.html">PDFxTMD::IReader</a></div><div class="ttdef"><b>Definition:</b> IReader.h:11</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1ITMDInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1ITMDInterpolator.html">PDFxTMD::ITMDInterpolator</a></div><div class="ttdef"><b>Definition:</b> IInterpolator.h:37</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IcPDFInterpolator_html"><div class="ttname"><a href="classPDFxTMD_1_1IcPDFInterpolator.html">PDFxTMD::IcPDFInterpolator</a></div><div class="ttdef"><b>Definition:</b> IInterpolator.h:32</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
+<div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bf"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PDFxTMD::PartonFlavor</a></div><div class="ttdeci">PartonFlavor</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
