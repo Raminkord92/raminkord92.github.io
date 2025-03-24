@@ -1,5 +1,0 @@
-<map id="conv_limits_base&lt; 8u &gt;" name="conv_limits_base&lt; 8u &gt;">
-<area shape="rect" id="node1" title="The specialization of conv_limits_base for 8 byte integers, e.g., int64_t, uint64_t." alt="" coords="107,5,289,32"/>
-<area shape="rect" id="node2" href="$structconv__limits_3_018u_00_01false_01_4.html" title="The specialization of conv_limits for 8 byte unsigned integers, e.g., uint64_t." alt="" coords="5,80,188,107"/>
-<area shape="rect" id="node3" href="$structconv__limits_3_018u_00_01true_01_4.html" title="The specialization of conv_limits for 8 byte signed integers, e.g., int64_t." alt="" coords="212,80,389,107"/>
-</map>

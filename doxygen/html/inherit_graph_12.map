@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structconv__limits__base_3_011u_01_4.html" title="The specialization of conv_limits_base for 1 byte integers, e.g., int8_t, uint8_t." alt="" coords="5,31,187,57"/>
-<area shape="rect" id="node2" href="$structconv__limits_3_011u_00_01false_01_4.html" title="The specialization of conv_limits for 1 byte unsigned integers, e.g., uint8_t." alt="" coords="235,5,417,32"/>
-<area shape="rect" id="node3" href="$structconv__limits_3_011u_00_01true_01_4.html" title="The specialization of conv_limits for 1 byte signed integers, e.g., int8_t." alt="" coords="237,56,415,83"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="is_node_compatible_type&lt; BasicNodeType, CompatibleType &gt;" name="is_node_compatible_type&lt; BasicNodeType, CompatibleType &gt;">
-<area shape="rect" id="node1" title="Type traits to check if CompatibleType is a compatible type for BasicNodeType." alt="" coords="27,184,203,240"/>
-<area shape="rect" id="node2" href="$structis__node__compatible__type__impl.html" title="Type traits implementation of is_node_compatible_type to check if CompatibleType is a compatible type..." alt="" coords="5,80,225,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="56,5,175,32"/>
-</map>

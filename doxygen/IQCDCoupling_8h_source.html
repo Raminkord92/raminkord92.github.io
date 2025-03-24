@@ -118,11 +118,11 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1IQCDCoupling.html#ae4bdec4f059d4260f63cabc8ef103720">   47</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1IQCDCoupling.html">IQCDCoupling</a> &amp;<a class="code" href="classPDFxTMD_1_1IQCDCoupling.html#ae4bdec4f059d4260f63cabc8ef103720">operator=</a>(<a class="code" href="classPDFxTMD_1_1IQCDCoupling.html">IQCDCoupling</a> <span class="keyword">const</span> &amp;other)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">using</span> <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">std::swap</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">using</span> std::swap;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classPDFxTMD_1_1IQCDCoupling.html">IQCDCoupling</a> copy(other);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(pimpl_, copy.pimpl_);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(clone_, copy.clone_);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(alphaQCOperation_, copy.alphaQCOperation_);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        swap(pimpl_, copy.pimpl_);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        swap(clone_, copy.clone_);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        swap(alphaQCOperation_, copy.alphaQCOperation_);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -163,7 +163,6 @@ $(function() {
 <div class="ttc" id="aclassPDFxTMD_1_1IQCDCoupling_html_ae4bdec4f059d4260f63cabc8ef103720"><div class="ttname"><a href="classPDFxTMD_1_1IQCDCoupling.html#ae4bdec4f059d4260f63cabc8ef103720">PDFxTMD::IQCDCoupling::operator=</a></div><div class="ttdeci">IQCDCoupling &amp; operator=(IQCDCoupling const &amp;other)</div><div class="ttdef"><b>Definition:</b> IQCDCoupling.h:47</div></div>
 <div class="ttc" id="aclassPDFxTMD_1_1IQCDCoupling_html_af73746c609d2a705ba44fe3f3e12392a"><div class="ttname"><a href="classPDFxTMD_1_1IQCDCoupling.html#af73746c609d2a705ba44fe3f3e12392a">PDFxTMD::IQCDCoupling::IQCDCoupling</a></div><div class="ttdeci">IQCDCoupling(AlphaQCOperation_T alphaQCDApproach)</div><div class="ttdef"><b>Definition:</b> IQCDCoupling.h:16</div></div>
 <div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
-<div class="ttc" id="anode_8hpp_html_aec92720797c84629d71585fb7fcc5bce"><div class="ttname"><a href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a></div><div class="ttdeci">void swap(basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;lhs, basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs)))</div><div class="ttdoc">Swap function for basic_node objects.</div><div class="ttdef"><b>Definition:</b> node.hpp:15679</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

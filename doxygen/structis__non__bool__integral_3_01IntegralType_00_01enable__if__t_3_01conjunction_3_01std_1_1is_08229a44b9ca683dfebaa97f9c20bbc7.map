@@ -1,4 +1,0 @@
-<map id="is_non_bool_integral&lt; IntegralType, enable_if_t&lt; conjunction&lt; std::is_integral&lt; IntegralType &gt;, negation&lt; std::is_same&lt; bool, IntegralType &gt; &gt; &gt;::value &gt; &gt;" name="is_non_bool_integral&lt; IntegralType, enable_if_t&lt; conjunction&lt; std::is_integral&lt; IntegralType &gt;, negation&lt; std::is_same&lt; bool, IntegralType &gt; &gt; &gt;::value &gt; &gt;">
-<area shape="rect" id="node1" title="A partial specialization of is_non_bool_integral if IntegralType is of non&#45;boolean integral types." alt="" coords="5,80,212,195"/>
-<area shape="rect" id="node2" title=" " alt="" coords="53,5,165,32"/>
-</map>

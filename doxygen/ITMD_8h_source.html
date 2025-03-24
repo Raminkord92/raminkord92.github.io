@@ -131,11 +131,11 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">  105</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> &amp;<a class="code" href="classPDFxTMD_1_1ITMD.html#a54cfcc565c4e048b9e47dde453193ac7">operator=</a>(<a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> <span class="keyword">const</span> &amp;other)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">using</span> <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">std::swap</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keyword">using</span> std::swap;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="classPDFxTMD_1_1ITMD.html">ITMD</a> copy(other);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(pimpl_, copy.pimpl_);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(clone_, copy.clone_);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(tmdOperation_, copy.tmdOperation_);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        swap(pimpl_, copy.pimpl_);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        swap(clone_, copy.clone_);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        swap(tmdOperation_, copy.tmdOperation_);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
@@ -183,7 +183,6 @@ $(function() {
 <div class="ttc" id="aclassPDFxTMD_1_1ITMD_html_af9808c6c648cb8681e7a9903c91a071a"><div class="ttname"><a href="classPDFxTMD_1_1ITMD.html#af9808c6c648cb8681e7a9903c91a071a">PDFxTMD::ITMD::tmd</a></div><div class="ttdeci">double tmd(PartonFlavor flavor, double x, double kt2, double mu2) const</div><div class="ttdoc">Evaluate the TMD PDF for a specific flavor.</div><div class="ttdef"><b>Definition:</b> ITMD.h:64</div></div>
 <div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
 <div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bf"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PDFxTMD::PartonFlavor</a></div><div class="ttdeci">PartonFlavor</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:51</div></div>
-<div class="ttc" id="anode_8hpp_html_aec92720797c84629d71585fb7fcc5bce"><div class="ttname"><a href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a></div><div class="ttdeci">void swap(basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;lhs, basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs)))</div><div class="ttdoc">Swap function for basic_node objects.</div><div class="ttdef"><b>Definition:</b> node.hpp:15679</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

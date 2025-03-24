@@ -129,11 +129,11 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classPDFxTMD_1_1ICPDF.html#a418c793a76d3ed536cee284a0d27408a">  101</a></span>&#160;    <a class="code" href="classPDFxTMD_1_1ICPDF.html">ICPDF</a> &amp;<a class="code" href="classPDFxTMD_1_1ICPDF.html#a418c793a76d3ed536cee284a0d27408a">operator=</a>(<a class="code" href="classPDFxTMD_1_1ICPDF.html">ICPDF</a> <span class="keyword">const</span> &amp;other)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">using</span> <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">std::swap</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">using</span> std::swap;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classPDFxTMD_1_1ICPDF.html">ICPDF</a> copy(other);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(pimpl_, copy.pimpl_);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(clone_, copy.clone_);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a>(pdfOperation_, copy.pdfOperation_);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        swap(pimpl_, copy.pimpl_);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        swap(clone_, copy.clone_);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        swap(pdfOperation_, copy.pdfOperation_);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -183,7 +183,6 @@ $(function() {
 <div class="ttc" id="aclassPDFxTMD_1_1ICPDF_html_af0f9ef5a9b6678c509b9d1769b60b2d8"><div class="ttname"><a href="classPDFxTMD_1_1ICPDF.html#af0f9ef5a9b6678c509b9d1769b60b2d8">PDFxTMD::ICPDF::pdf</a></div><div class="ttdeci">void pdf(double x, double mu2, std::array&lt; double, 13 &gt; &amp;output) const</div><div class="ttdoc">Evaluate the array of Collinear PDF values for {tbar, bbar, cbar, sbar, ubar, dbar,...</div><div class="ttdef"><b>Definition:</b> ICPDF.h:76</div></div>
 <div class="ttc" id="anamespacePDFxTMD_html"><div class="ttname"><a href="namespacePDFxTMD.html">PDFxTMD</a></div><div class="ttdef"><b>Definition:</b> AllFlavorsShape.h:12</div></div>
 <div class="ttc" id="anamespacePDFxTMD_html_a5eced1cc867894f9a673c61ae481c7bf"><div class="ttname"><a href="namespacePDFxTMD.html#a5eced1cc867894f9a673c61ae481c7bf">PDFxTMD::PartonFlavor</a></div><div class="ttdeci">PartonFlavor</div><div class="ttdef"><b>Definition:</b> PartonUtils.h:51</div></div>
-<div class="ttc" id="anode_8hpp_html_aec92720797c84629d71585fb7fcc5bce"><div class="ttname"><a href="node_8hpp.html#aec92720797c84629d71585fb7fcc5bce">swap</a></div><div class="ttdeci">void swap(basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;lhs, basic_node&lt; SequenceType, MappingType, BooleanType, IntegerType, FloatNumberType, StringType, ConverterType &gt; &amp;rhs) noexcept(noexcept(lhs.swap(rhs)))</div><div class="ttdoc">Swap function for basic_node objects.</div><div class="ttdef"><b>Definition:</b> node.hpp:15679</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

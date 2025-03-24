@@ -1,4 +1,0 @@
-<map id="has_get_buffer_view&lt; InputAdapterType, enable_if_t&lt; is_detected&lt; get_buffer_view_fn_t, InputAdapterType &gt;::value &gt; &gt;" name="has_get_buffer_view&lt; InputAdapterType, enable_if_t&lt; is_detected&lt; get_buffer_view_fn_t, InputAdapterType &gt;::value &gt; &gt;">
-<area shape="rect" id="node1" title="A partial specialization of has_get_buffer_view if InputAdapterType has get_buffer_view member functi..." alt="" coords="5,80,235,165"/>
-<area shape="rect" id="node2" title=" " alt="" coords="64,5,176,32"/>
-</map>

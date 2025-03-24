@@ -1,4 +1,0 @@
-<map id="is_comparable&lt; Comparator, T, U, void_t&lt; decltype(std::declval&lt; Comparator &gt;()(std::declval&lt; T &gt;(), std::declval&lt; U &gt;())), decltype(std::declval&lt; Comparator &gt;()(std::declval&lt; U &gt;(), std::declval&lt; T &gt;()))&gt; &gt;" name="is_comparable&lt; Comparator, T, U, void_t&lt; decltype(std::declval&lt; Comparator &gt;()(std::declval&lt; T &gt;(), std::declval&lt; U &gt;())), decltype(std::declval&lt; Comparator &gt;()(std::declval&lt; U &gt;(), std::declval&lt; T &gt;()))&gt; &gt;">
-<area shape="rect" id="node1" title="A partial specialization of is_comparable if T and U are comparable types." alt="" coords="5,80,300,195"/>
-<area shape="rect" id="node2" title=" " alt="" coords="97,5,209,32"/>
-</map>

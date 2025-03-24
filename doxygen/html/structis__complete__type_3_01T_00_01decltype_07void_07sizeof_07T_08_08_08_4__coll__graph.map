@@ -1,4 +1,0 @@
-<map id="is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;" name="is_complete_type&lt; T, decltype(void(sizeof(T)))&gt;">
-<area shape="rect" id="node1" title="A partial specialization of is_complete_type if T is a complete type." alt="" coords="5,80,204,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="49,5,161,32"/>
-</map>

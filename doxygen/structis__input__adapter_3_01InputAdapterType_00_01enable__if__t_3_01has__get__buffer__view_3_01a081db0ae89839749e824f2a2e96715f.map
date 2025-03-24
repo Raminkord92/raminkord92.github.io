@@ -1,4 +1,0 @@
-<map id="is_input_adapter&lt; InputAdapterType, enable_if_t&lt; has_get_buffer_view&lt; InputAdapterType &gt;::value &gt; &gt;" name="is_input_adapter&lt; InputAdapterType, enable_if_t&lt; has_get_buffer_view&lt; InputAdapterType &gt;::value &gt; &gt;">
-<area shape="rect" id="node1" title="A partial specialization of is_input_adapter if T is an input adapter type." alt="" coords="5,80,240,151"/>
-<area shape="rect" id="node2" title=" " alt="" coords="67,5,179,32"/>
-</map>
